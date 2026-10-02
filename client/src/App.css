@@ -657,6 +657,94 @@
   outline-offset: 4px;
 }
 
+/* Simulated Click State on Play Button */
+.phone-cinematic-play-btn.is-simulated-click .phone-play-disc {
+  transform: scale(0.93) !important;
+  background: #ffffff !important;
+  color: var(--color-orange-primary) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.45) !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+/* --------------------------------------------------------------------------
+   Automatic Cinematic Hand Pointer Layer (Realistic, Large Index Finger)
+   -------------------------------------------------------------------------- */
+
+.cinematic-hand-stage {
+  position: absolute;
+  pointer-events: none;
+  z-index: 45;
+  user-select: none;
+  will-change: top, left, transform, opacity;
+  transition:
+    top 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+    left 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.18s ease-out,
+    opacity 0.28s ease-out;
+}
+
+.cinematic-hand-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+}
+
+.cinematic-hand-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* 1. Entering State: Bottom-Right of Play Button */
+.pointer-entering {
+  top: 76%;
+  left: 74%;
+  opacity: 0;
+  transform: translate(24px, 24px) scale(0.94);
+}
+
+/* 2. Moving State: Smooth arrival onto center of play button */
+.pointer-moving {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  /* Aligns the index fingertip precisely onto play button center */
+  transform: translate(-44%, -5%) scale(1);
+}
+
+/* 3. Tapping State: Fingertip presses down onto button */
+.pointer-tapping {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  transform: translate(-44%, -10px) scale(0.92);
+}
+
+/* 4. Fading State: Subtle lift and smooth fade away */
+.pointer-fading {
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-44%, 8px) scale(0.96);
+}
+
+/* Responsive Hand Scaling */
+@media (max-width: 640px) {
+  .cinematic-hand-wrapper {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+/* Accessibility: Disable animation if user prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .cinematic-hand-stage {
+    display: none !important;
+  }
+}
+
 /* Floor Shadows for Horizontal Phone */
 .hphone-contact-shadow {
   height: 14px;
