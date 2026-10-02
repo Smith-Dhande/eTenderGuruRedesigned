@@ -212,9 +212,13 @@ export const translations = {
 
     // Contact & Enquiry Section
     contact: {
+      eyebrow: "06 — GET IN TOUCH",
       badge: "GET IN TOUCH",
+      titleSerif: "Start Your Tender",
+      titleImpact: "LEARNING JOURNEY.",
       title: "Start Your Tender Learning Journey",
       subtitle: "Have questions about our courses, need guidance on portal registration, or want to discuss customized training for your team? Send us a direct enquiry.",
+      support: "Have questions about our courses, portal registration, or need personalized guidance? Reach out directly to our expert team.",
       form: {
         title: "Course Enquiry Form",
         fullName: "Full Name",
@@ -235,12 +239,12 @@ export const translations = {
         sendAnother: "Send Another Query"
       },
       directChannels: {
-        title: "Direct Channels",
-        desc: "Reach out directly for fast course consultation and schedule inquiries:",
+        title: "Direct Consultation Hub",
+        desc: "Prefer instant communication? Connect directly with our training team for personalized enrollment guidance:",
         whatsappBtn: "Chat on WhatsApp",
         whatsappMsg: "Hello eTender Guru, I visited your website and would like information about your tender training courses.",
-        callBtn: "Call Us Direct",
-        emailBtn: "Send Email",
+        callBtn: "Direct Helpline",
+        emailBtn: "Official Email",
         locationLabel: "Location & Coverage",
         locationValue: "Maharashtra, India (Serving Nationwide Online)"
       }
@@ -479,9 +483,13 @@ export const translations = {
 
     // Contact & Enquiry Section
     contact: {
+      eyebrow: "०६ — संपर्क साधा",
       badge: "संपर्क साधा",
+      titleSerif: "तुमचा ई-निविदा प्रवास",
+      titleImpact: "आजच सुरू करा.",
       title: "शासकीय निविदा शिकण्याचा प्रवास सुरू करा",
       subtitle: "कोर्सेसबद्दल माहिती हवी असल्यास, पोर्टल नोंदणीबद्दल शंका असल्यास किंवा विशेष मार्गदर्शनासाठी थेट चौकशी फॉर्म भरा.",
+      support: "कोर्सेसबद्दल काही प्रश्न आहेत किंवा पोर्टल नोंदणीबाबत वैयक्तिक मार्गदर्शन हवे आहे का? थेट आमच्या तज्ज्ञ टीमशी संपर्क साधा.",
       form: {
         title: "कोर्स चौकशी फॉर्म",
         fullName: "पूर्ण नाव",
@@ -502,12 +510,12 @@ export const translations = {
         sendAnother: "दुसरा प्रश्न विचारा"
       },
       directChannels: {
-        title: "थेट संपर्क माध्यमे",
-        desc: "तातडीच्या माहितीसाठी आणि मार्गदर्शन सत्रांसाठी खालील माध्यमांवर संपर्क साधा:",
+        title: "थेट संपर्क केंद्र",
+        desc: "तातडीच्या माहितीसाठी आणि मार्गदर्शन सत्रांसाठी खालील अधिकृत माध्यमांवर संपर्क साधा:",
         whatsappBtn: "व्हॉट्सॲपवर चॅट करा",
         whatsappMsg: "नमस्कार ई-टेंडर गुरु, मी आपल्या वेबसाईटवर माहिती पाहिली. मला आपल्या निविदा प्रशिक्षण कोर्सेसबद्दल अधिक माहिती हवी आहे.",
-        callBtn: "थेट फोन करा",
-        emailBtn: "ईमेल पाठवा",
+        callBtn: "थेट फोन हेल्पलाईन",
+        emailBtn: "अधिकृत ईमेल",
         locationLabel: "स्थान व कार्यक्षेत्र",
         locationValue: "महाराष्ट्र, भारत (ऑनलाइन माध्यमातून राज्यभर उपलब्ध)"
       }
