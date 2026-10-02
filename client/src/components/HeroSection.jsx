@@ -25,7 +25,10 @@ export const HeroSection = ({ onExploreCourses }) => {
           {/* Left Column: Eyebrow, Editorial Display Headline, Supporting Copy, Tactile CTA */}
           <div className="hero-content-col">
             <div className="hero-eyebrow-wrap">
-              <span className="hero-eyebrow">{t.label}</span>
+              <span className="hero-eyebrow hero-eyebrow-desktop">{t.label}</span>
+              <span className="hero-eyebrow hero-eyebrow-mobile">
+                {language === 'mr' ? 'ई-टेंडर गुरू' : 'eTender Guru'}
+              </span>
             </div>
 
             <h1 className="hero-editorial-heading">

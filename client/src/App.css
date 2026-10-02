@@ -246,6 +246,10 @@
 }
 
 /* Hero Responsive Adjustments */
+.hero-eyebrow-mobile {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .hero-editorial-wordmark {
     top: 34%;
@@ -266,12 +270,26 @@
 }
 
 @media (max-width: 640px) {
+  .hero-eyebrow-desktop {
+    display: none;
+  }
+
+  .hero-eyebrow-mobile {
+    display: block;
+    font-family: var(--font-serif);
+    font-size: clamp(2.1rem, 7vw, 3rem);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.015em;
+    color: transparent;
+    -webkit-text-stroke: 1.3px rgba(255, 255, 255, 0.7);
+    text-transform: none;
+    margin-bottom: 8px;
+    white-space: nowrap;
+  }
+
   .hero-editorial-wordmark {
-    top: 25%;
-    left: 52%;
-    font-size: clamp(2rem, 9vw, 3.2rem);
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
-    opacity: 0.7;
+    display: none;
   }
 }
 
