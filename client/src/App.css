@@ -224,6 +224,57 @@
   filter: drop-shadow(0 14px 20px rgba(0, 0, 0, 0.16));
 }
 
+/* Decorative Editorial Outlined Wordmark (Layered Behind Founder) */
+.hero-editorial-wordmark {
+  position: absolute;
+  top: 36%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  font-family: var(--font-serif);
+  font-size: clamp(4.5rem, 9.8vw, 10.2rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.015em;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.45);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  z-index: 5;
+  transition: all 0.3s ease;
+}
+
+/* Hero Responsive Adjustments */
+@media (max-width: 1200px) {
+  .hero-editorial-wordmark {
+    top: 34%;
+    left: 60%;
+    font-size: clamp(4rem, 9.2vw, 7.8rem);
+    -webkit-text-stroke: 1.3px rgba(255, 255, 255, 0.42);
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-editorial-wordmark {
+    top: 32%;
+    left: 54%;
+    font-size: clamp(3rem, 8vw, 5.2rem);
+    -webkit-text-stroke: 1.1px rgba(255, 255, 255, 0.38);
+    opacity: 0.85;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-editorial-wordmark {
+    top: 25%;
+    left: 52%;
+    font-size: clamp(2rem, 9vw, 3.2rem);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+    opacity: 0.7;
+  }
+}
+
 
 /* --------------------------------------------------------------------------
    1.5 FOUNDER VIDEO SECTION (Left-to-Right Header & Horizontal Phone Center)
@@ -2783,8 +2834,8 @@
 .studio-textarea {
   width: 100%;
   min-width: 0;
-  min-height: 108px;
-  max-height: 220px;
+  min-height: 96px;
+  max-height: 200px;
   padding: 12px 14px;
   background: #fafaf9;
   border: 1px solid #e2e8f0;
@@ -2805,85 +2856,14 @@
   box-shadow: 0 0 0 3px rgba(241, 90, 36, 0.12);
 }
 
-/* Quick Select Course Chips */
-.studio-chips-wrap {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-  padding: 10px 12px;
-  background: #fafaf9;
-  border-radius: 10px;
-  border: 1px solid #f0eee9;
-  min-width: 0;
-}
-
-.chips-label {
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: #64748b;
-  flex-shrink: 0;
-}
-
-.chips-list {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  flex-wrap: wrap;
-  min-width: 0;
-}
-
-.studio-chip-btn {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  color: #475569;
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding: 4px 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.15s ease;
-  white-space: nowrap;
-}
-
-.studio-chip-btn:hover {
-  border-color: var(--color-orange-primary);
-  color: var(--color-orange-primary);
-}
-
-.studio-chip-btn.is-selected {
-  background: var(--color-orange-primary);
-  color: #ffffff;
-  border-color: var(--color-orange-primary);
-}
-
-/* Action Grid & Submit CTA */
-.studio-action-grid {
-  align-items: flex-end;
-}
-
-.studio-submit-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  min-width: 0;
-}
-
-.studio-submit-label-spacer {
-  visibility: hidden;
-  user-select: none;
-}
-
+/* Submit CTA */
 .studio-submit-btn {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 14px 28px;
+  padding: 15px 28px;
   background: var(--color-orange-primary);
   color: #ffffff;
   border: none;
@@ -2894,8 +2874,29 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.2s ease;
-  box-shadow: 0 4px 16px rgba(241, 90, 36, 0.26);
+  box-shadow: 0 6px 20px rgba(241, 90, 36, 0.28);
+  margin-top: 4px;
   box-sizing: border-box;
+}
+
+.studio-submit-btn:hover:not(:disabled) {
+  background: var(--color-orange-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(241, 90, 36, 0.38);
+}
+
+.studio-submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.studio-btn-arrow {
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+.studio-submit-btn:hover:not(:disabled) .studio-btn-arrow {
+  transform: translateX(4px);
 }
 
 .studio-submit-btn:hover:not(:disabled) {

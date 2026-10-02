@@ -15,6 +15,11 @@ export const HeroSection = ({ onExploreCourses }) => {
       </div>
 
       <header className="hero-banner" id="hero">
+        {/* Decorative Outlined Editorial Wordmark Layer */}
+        <div className="hero-editorial-wordmark" aria-hidden="true">
+          <span>eTender Guru</span>
+        </div>
+
         <div className="hero-inner-container">
           
           {/* Left Column: Eyebrow, Editorial Display Headline, Supporting Copy, Tactile CTA */}

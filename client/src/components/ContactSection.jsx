@@ -231,7 +231,7 @@ export const ContactSection = ({ selectedCourseId, onClearSelectedCourse }) => {
                   <button
                     type="submit"
                     disabled={submitting}
-                    className="studio-submit-btn studio-submit-btn-full"
+                    className="studio-submit-btn"
                   >
                     {submitting ? (
                       <span>{t.form.submitting}</span>
