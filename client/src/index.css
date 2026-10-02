@@ -9,15 +9,15 @@
   --color-orange-light: #fff5f0;
   --color-orange-border: rgba(241, 90, 36, 0.25);
   
-  /* Neutral Palette */
-  --color-bg-page: #ffffff;
-  --color-bg-subtle: #f8fafc;
+  /* Neutral Palette (Our COURSES Warm Ivory Global Page Neutral) */
+  --color-bg-page: #faf8f5;
+  --color-bg-subtle: #f3efe9;
   --color-bg-card: #ffffff;
   --color-text-main: #0f172a;
   --color-text-muted: #475569;
   --color-text-subtle: #64748b;
-  --color-border-light: #e2e8f0;
-  --color-border-strong: #cbd5e1;
+  --color-border-light: #e6e2db;
+  --color-border-strong: #d5cfc5;
 
   /* Accent & Feedback */
   --color-success: #16a34a;

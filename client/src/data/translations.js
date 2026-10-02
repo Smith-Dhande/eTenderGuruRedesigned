@@ -39,6 +39,7 @@ export const translations = {
       support: "Step-by-step, practical courses to help you understand, find and win government tenders.",
 
       viewDetails: "View Syllabus",
+      explore: "Explore",
       enquireNow: "Enquire for Course",
       durationLabel: "Duration",
       levelLabel: "Level",
@@ -276,6 +277,7 @@ export const translations = {
         levels: "नवशिक्या ते प्रगत"
       },
       viewDetails: "अभ्यासक्रम पहा",
+      explore: "एक्सप्लोर करा",
       enquireNow: "कोर्सची चौकशी करा",
       durationLabel: "कालावधी",
       levelLabel: "स्तर",

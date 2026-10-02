@@ -165,41 +165,11 @@ export const CoursesSection = ({ onSelectCourseForEnquiry }) => {
                 </div>
 
                 {/* Minimal Metadata Row & Circular Arrow Button */}
+                {/* Card Footer: Explore text on bottom-left, Action Arrow on bottom-right */}
                 <div className="card-footer-bar">
-
-                  {/* Metadata items */}
-                  {/* <div className="card-meta-list">
-
-                    <div className="card-meta-item">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                      </svg>
-                      <span>{modulesCount}</span>
-                    </div>
-
-                    <span className="card-meta-pipe" aria-hidden="true"></span>
-
-                    <div className="card-meta-item">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
-                      </svg>
-                      <span>{durationShort}</span>
-                    </div>
-
-                    <span className="card-meta-pipe" aria-hidden="true"></span>
-
-                    <div className="card-meta-item">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <line x1="18" y1="20" x2="18" y2="10"></line>
-                        <line x1="12" y1="20" x2="12" y2="4"></line>
-                        <line x1="6" y1="20" x2="6" y2="14"></line>
-                      </svg>
-                      <span>{levelTag}</span>
-                    </div>
-
-                  </div> */}
+                  <span className="card-explore-action">
+                    <span className="card-explore-text">{t.explore || 'Explore'}</span>
+                  </span>
 
                   {/* Clean Circular Action Arrow Button */}
                   <button
@@ -209,14 +179,13 @@ export const CoursesSection = ({ onSelectCourseForEnquiry }) => {
                       e.stopPropagation();
                       handleOpenModal(course);
                     }}
-                    aria-label={`Open syllabus for ${titleSerif} ${titleImpact}`}
+                    aria-label={`${t.explore || 'Explore'} ${titleSerif} ${titleImpact}`}
                   >
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                       <line x1="5" y1="12" x2="19" y2="12"></line>
                       <polyline points="12 5 19 12 12 19"></polyline>
                     </svg>
                   </button>
-
                 </div>
 
               </article>
