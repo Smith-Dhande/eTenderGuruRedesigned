@@ -20,11 +20,24 @@ export const translations = {
       altReference: "eTender Guru Hero Reference"
     },
 
-    // Course Section
+    // Founder Video Device Section
+    founderIntro: {
+      eyebrow: "01 — THE PERSON",
+      headlineSerif: "The Person",
+      headlineImpact: "BEHIND THE KNOWLEDGE.",
+      supportingText: "Before you learn the process, hear directly from the person behind it.",
+      watchCta: "WATCH INTRODUCTION",
+      playLabel: "Play Film",
+      pauseLabel: "Pause Film"
+    },
+
+    // Course Section (Reference-Based Editorial Catalogue)
     courses: {
-      badge: "STRUCTURED LEARNING",
-      title: "Comprehensive Tender Training Programs",
-      subtitle: "Step-by-step masterclasses designed to help contractors, suppliers, and entrepreneurs participate, bid, and succeed in government tenders.",
+      eyebrow: "02 — LEARN",
+      titleSerif: "Our",
+      titleImpact: "COURSES.",
+      support: "Step-by-step, practical courses to help you understand, find and win government tenders.",
+
       viewDetails: "View Syllabus",
       enquireNow: "Enquire for Course",
       durationLabel: "Duration",
@@ -43,10 +56,14 @@ export const translations = {
 
     // YouTube Section
     youtube: {
+      eyebrow: "03 — FREE KNOWLEDGE HUB",
       badge: "FREE KNOWLEDGE HUB",
+      titleSerif: "Free Knowledge",
+      titleImpact: "VIDEO HUB.",
       title: "Learn Government Tendering for Free",
       subtitle: "Watch detailed tutorials, live portal demonstrations, avoid common bidding mistakes, and stay updated with latest procurement policies.",
-      watchVideo: "Watch Video",
+      support: "Watch detailed tutorials, live portal demonstrations, avoid common bidding mistakes, and stay updated with latest procurement policies.",
+      watchVideo: "Watch Lesson",
       channelCta: "Visit YouTube Channel",
       subscribersText: "Free Practical Video Tutorials",
       categories: {
@@ -236,11 +253,28 @@ export const translations = {
       altReference: "ई-टेंडर गुरु संदर्भ"
     },
 
-    // Course Section
+    // Founder Video Device Section
+    founderIntro: {
+      eyebrow: "०१ — मार्गदर्शक व्यक्ती",
+      headlineSerif: "मार्गदर्शक व्यक्ती",
+      headlineImpact: "ज्ञानामागील खरा अनुभव.",
+      supportingText: "शासकीय निविदा शिकण्यापूर्वी, प्रत्यक्ष अनुभवातून मार्गदर्शन करणाऱ्या संस्थापकांचे विचार ऐका.",
+      watchCta: "परिचय व्हिडिओ पहा",
+      playLabel: "व्हिडिओ सुरू करा",
+      pauseLabel: "व्हिडिओ थांबवा"
+    },
+
+    // Course Section (Reference-Based Editorial Catalogue)
     courses: {
-      badge: "संरचित शिक्षण",
-      title: "शासकीय निविदांचे सर्वसमावेशक प्रशिक्षण कोर्सेस",
-      subtitle: "कंत्राटदार, पुरवठादार आणि नवउद्योजकांसाठी शासकीय निविदांमध्ये आत्मविश्वासाने भाग घेऊन यशस्वी होण्यासाठी तयार केलेले कोर्सेस.",
+      eyebrow: "०२ — शिका",
+      titleSerif: "आमचे",
+      titleImpact: "अभ्यासक्रम.",
+      support: "शासकीय निविदा समजून घेण्यासाठी, शोधण्यासाठी व जिंकण्यासाठी टप्प्याटप्प्याने मार्गदर्शन.",
+      benefits: {
+        structured: "संरचित शिक्षण",
+        examples: "थेट उदाहरणे",
+        levels: "नवशिक्या ते प्रगत"
+      },
       viewDetails: "अभ्यासक्रम पहा",
       enquireNow: "कोर्सची चौकशी करा",
       durationLabel: "कालावधी",
@@ -259,9 +293,13 @@ export const translations = {
 
     // YouTube Section
     youtube: {
+      eyebrow: "०३ — मोफत ज्ञान भांडार",
       badge: "मोफत ज्ञान भांडार",
+      titleSerif: "मोफत ज्ञान भांडार",
+      titleImpact: "व्हिडिओ प्रात्यक्षिके.",
       title: "शासकीय निविदांचे शिक्षण मोफत मिळवा",
       subtitle: "आमच्या यूट्यूब चॅनेलवर थेट पोर्टल प्रात्यक्षिके, निविदा भरताना होणाऱ्या चुका आणि शासकीय खरेदीचे नवे नियम मोफत शिका.",
+      support: "आमच्या यूट्यूब चॅनेलवर थेट पोर्टल प्रात्यक्षिके, निविदा भरताना होणाऱ्या चुका आणि शासकीय खरेदीचे नवे नियम मोफत शिका.",
       watchVideo: "व्हिडिओ पहा",
       channelCta: "यूट्यूब चॅनेलला भेट द्या",
       subscribersText: "मोफत व्यावहारिक व्हिडिओ धडे",

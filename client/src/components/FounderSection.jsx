@@ -20,7 +20,7 @@ export const FounderSection = () => {
 
         <div className="founder-main-grid">
           
-          {/* Left Column: Visual Media Gallery / Founder Portrait & Talk */}
+          {/* Left Column: Authentic Founder Visual Gallery */}
           <div className="founder-media-col">
             <div className="founder-portrait-card">
               <div className="founder-image-stage">
@@ -36,35 +36,13 @@ export const FounderSection = () => {
                 </div>
               </div>
 
-              {/* Founder Video Briefing Container if available */}
-              <div className="founder-video-snippet">
-                {!isPlayingVideo ? (
-                  <div
-                    className="founder-video-thumb-wrap"
-                    onClick={() => setIsPlayingVideo(true)}
-                  >
-                    <img
-                      src="/owner&founder/image copy.png"
-                      alt="Founder Talk"
-                      className="founder-video-thumb"
-                    />
-                    <div className="founder-video-play-btn" aria-label="Play Founder Video">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                      </svg>
-                    </div>
-                    <span className="founder-video-label">{t.videoBadgeText}</span>
-                  </div>
-                ) : (
-                  <div className="founder-video-player">
-                    <video
-                      src="/owner&founder/ownertalk.mp4"
-                      controls
-                      autoPlay
-                      className="founder-video-element"
-                    />
-                  </div>
-                )}
+              <div className="founder-secondary-photo-wrap">
+                <img
+                  src="/owner&founder/image copy 2.png"
+                  alt="eTender Guru Workshop & Practical Training"
+                  className="founder-secondary-photo"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>

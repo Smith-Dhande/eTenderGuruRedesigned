@@ -1,98 +1,135 @@
 export const videosData = [
   {
-    id: "yt-1",
-    thumbnail: "/videos/yt1.jpg",
+    id: "zZdxogBC89Q",
+    youtubeId: "zZdxogBC89Q",
+    thumbnail: "https://i.ytimg.com/vi/zZdxogBC89Q/hqdefault.jpg",
     category: "tutorials",
-    duration: "18:42",
+    tag: "UBE Lottery",
+    tagMr: "लॉटरी पद्धत",
+    duration: "14:20",
     title: {
-      en: "How to Fill E-Tenders Online Step-by-Step (Live Mahatender Demo)",
-      mr: "महाटेंडर पोर्टलवर ई-निविदा ऑनलाइन कशी भरावी? (थेट प्रात्यक्षिक)"
+      en: "Allotment of Work via Lottery System for Unemployed Engineers | How to Apply",
+      mr: "सुशिक्षित बेरोजगार अभियंता: लॉटरी पद्धतीने काम वाटप व अर्ज प्रक्रिया"
     },
     desc: {
-      en: "Complete walkthrough of logging in with Class 3 DSC, searching tenders, creating envelopes, and submitting bids.",
-      mr: "क्लास ३ डिजिटल सिग्नेचरने लॉगिन करणे, निविदा शोधणे आणि पाकीट अ, ब, क अपलोड करण्याची संपूर्ण पद्धत."
+      en: "Complete guide on government work allotment via lottery system for unemployed graduate engineers and eligibility rules.",
+      mr: "सुशिक्षित बेरोजगार अभियंत्यांसाठी लॉटरी पद्धतीने शासकीय कामांचे वाटप, अटी आणि अर्ज करण्याची संपूर्ण पद्धत."
     },
-    youtubeUrl: "https://www.youtube.com/@etenderguru",
+    youtubeUrl: "https://youtu.be/zZdxogBC89Q",
     featured: true
   },
   {
-    id: "yt-2",
-    thumbnail: "/videos/yt2.jpg",
-    category: "mistakes",
-    duration: "14:15",
-    title: {
-      en: "Top 5 Mistakes That Reject Technical Bids in Government Tenders",
-      mr: "शासकीय निविदांमध्ये तांत्रिक बोली बाद होण्याची ५ मुख्य कारणे"
-    },
-    desc: {
-      en: "Learn the exact reasons why 80% of technical bids get disqualified during the evaluation stage.",
-      mr: "तांत्रिक मूल्यमापनात निविदा का बाद होते आणि ती सुरक्षित ठेवण्यासाठी काय काळजी घ्यावी?"
-    },
-    youtubeUrl: "https://www.youtube.com/@etenderguru",
-    featured: true
-  },
-  {
-    id: "yt-3",
-    thumbnail: "/videos/yt3.jpg",
-    category: "gem",
-    duration: "21:30",
-    title: {
-      en: "Mahatender Document Upload & DSC Java Error Solutions",
-      mr: "महाटेंडर कागदपत्रे अपलोड व जावा (Java) एररचे खात्रीशीर निवारण"
-    },
-    desc: {
-      en: "Fixing PKI component errors, DSC browser mapping, and smooth uploading of multi-MB PDFs.",
-      mr: "जावा ब्लॉक होणे, टोकन न दिसणे व पीडीएफ अपलोडमधील त्रुटी सोडवण्याचे सोपे तंत्र."
-    },
-    youtubeUrl: "https://www.youtube.com/@etenderguru",
-    featured: true
-  },
-  {
-    id: "yt-4",
-    thumbnail: "/videos/yt4.jpg",
-    category: "gem",
-    duration: "16:48",
-    title: {
-      en: "GeM Portal Registration, Bank Validation & Product Listing",
-      mr: "GeM पोर्टल नोंदणी, बँक व्हॅलिडेशन व प्रॉडक्ट लिस्टिंग प्रक्रिया"
-    },
-    desc: {
-      en: "How MSME suppliers can register on GeM 4.0 and bid on direct government supply contracts.",
-      mr: "एमएसएमई पुरवठादारांनी GeM वर विक्रेता नोंदणी करून थेट शासकीय पुरवठा कसा करावा?"
-    },
-    youtubeUrl: "https://www.youtube.com/@etenderguru",
-    featured: false
-  },
-  {
-    id: "yt-5",
-    thumbnail: "/videos/yt5.jpg",
+    id: "1VHVoWCrSbA",
+    youtubeId: "1VHVoWCrSbA",
+    thumbnail: "https://i.ytimg.com/vi/1VHVoWCrSbA/hqdefault.jpg",
     category: "basics",
-    duration: "19:05",
+    tag: "Eligibility Rules",
+    tagMr: "महत्त्वाच्या अटी",
+    duration: "12:45",
     title: {
-      en: "Understanding NIT, BOQ, EMD & Bank Guarantee Formats",
-      mr: "NIT दस्तऐवज, BOQ एक्सेल शीट, EMD व बँक गॅरंटीचे नियम"
+      en: "Want Government Tenders? Mandatory Conditions & Eligibility to Qualify",
+      mr: "सरकारी टेंडर हवे आहे? मग या अटी पूर्ण कराव्या लागतील!"
     },
     desc: {
-      en: "A comprehensive beginner guide to reading tender specifications and estimating project profitability.",
-      mr: "निविदेतील महत्त्वाच्या अटी व कामातील नफा-तोटा कसा तपासावा याचे परिपूर्ण मार्गदर्शन."
+      en: "Learn the core eligibility criteria, solvency requirements, and registration documents required before bidding on government contracts.",
+      mr: "शासकीय निविदा मिळवण्यासाठी आवश्यक पात्रता, कागदपत्रे आणि प्राथमिक अटींची सविस्तर माहिती."
     },
-    youtubeUrl: "https://www.youtube.com/@etenderguru",
-    featured: false
+    youtubeUrl: "https://youtu.be/1VHVoWCrSbA",
+    featured: true
   },
   {
-    id: "yt-6",
-    thumbnail: "/videos/yt6.jpg",
-    category: "tutorials",
-    duration: "23:12",
+    id: "HuSZ53r7enc",
+    youtubeId: "HuSZ53r7enc",
+    thumbnail: "https://i.ytimg.com/vi/HuSZ53r7enc/hqdefault.jpg",
+    category: "mistakes",
+    tag: "Corrigendum Guide",
+    tagMr: "शुद्धीपत्रक नियम",
+    duration: "10:15",
     title: {
-      en: "PWD & ZP Contractor Registration: Documents & Procedure",
-      mr: "पीडब्ल्यूडी व जिल्हा परिषद कंत्राटदार नोंदणी: कागदपत्रे व पद्धत"
+      en: "Important for Contractors: Corrigendum & Addendum Types in Tenders",
+      mr: "कंत्राटदारांसाठी महत्त्वाची माहिती: टेंडरमधील शुद्धीपत्रक आणि त्याचे प्रकार"
     },
     desc: {
-      en: "How unemployed engineers and contractors can obtain class registration without agents.",
-      mr: "सुशिक्षित बेरोजगार अभियंता व नवउद्योजकांसाठी थेट कंत्राटदार परवाना काढण्याची माहिती."
+      en: "Understanding tender corrigendum, date extensions, BOQ modifications, and how to stay compliant with changes.",
+      mr: "निविदेतील शुद्धीपत्रक (Corrigendum), मुदतवाढ आणि तांत्रिक बदल समजून घेण्याची अचूक पद्धत."
     },
-    youtubeUrl: "https://www.youtube.com/@etenderguru",
-    featured: false
+    youtubeUrl: "https://youtu.be/HuSZ53r7enc",
+    featured: true
+  },
+  {
+    id: "m0vYNJl6dGU",
+    youtubeId: "m0vYNJl6dGU",
+    thumbnail: "https://i.ytimg.com/vi/m0vYNJl6dGU/hqdefault.jpg",
+    category: "tutorials",
+    tag: "Engineer Quota",
+    tagMr: "अभियंता आरक्षण",
+    duration: "15:30",
+    title: {
+      en: "Unemployed Graduate Engineer (UBE) Reservation & Government Benefits",
+      mr: "सुशिक्षित बेरोजगार अभियंता आरक्षण व शासकीय सवलती"
+    },
+    desc: {
+      en: "Key government GRs, EMD exemptions, performance security discounts, and quota reservations for engineer contractors.",
+      mr: "इंजिनिअर कंत्राटदारांसाठी शासकीय आरक्षण, बयाणा रक्कम (EMD) माफी व महत्वाचे शासन निर्णय."
+    },
+    youtubeUrl: "https://youtu.be/m0vYNJl6dGU",
+    featured: true
+  },
+  {
+    id: "w9X0J3kuxGg",
+    youtubeId: "w9X0J3kuxGg",
+    thumbnail: "https://i.ytimg.com/vi/w9X0J3kuxGg/hqdefault.jpg",
+    category: "basics",
+    tag: "Success Secrets",
+    tagMr: "यशाची सूत्रे",
+    duration: "18:50",
+    title: {
+      en: "Tender Guru Founder Shares BIG Secrets to Tender Bidding Success",
+      mr: "टेंडर गुरु संस्थापकांचे शासकीय निविदांमधील यशाचे मोठे गुपित"
+    },
+    desc: {
+      en: "Practical mindset, rate analysis strategies, and risk mitigation techniques directly from industry experience.",
+      mr: "शासकीय कामांचे दर विश्लेषण, नफा व्यवस्थापन आणि निविदा जिंकण्याची खात्रीशीर रणनीती."
+    },
+    youtubeUrl: "https://youtu.be/w9X0J3kuxGg",
+    featured: true
+  },
+  {
+    id: "ND1fTRNlm9k",
+    youtubeId: "ND1fTRNlm9k",
+    thumbnail: "https://i.ytimg.com/vi/ND1fTRNlm9k/hqdefault.jpg",
+    category: "gem",
+    tag: "GST Law & Rules",
+    tagMr: "GST तज्ज्ञ मार्गदर्शन",
+    duration: "22:10",
+    title: {
+      en: "Importance of GST in Government Tenders by Joint Commissioner GST",
+      mr: "शासकिय निविदेमध्ये जि.एस.टी चे महत्त्व :- चंद्रशेखर बोर्डे (उपायुक्त GST)"
+    },
+    desc: {
+      en: "Crucial insights on GST compliance, tax deductions (TDS on GST), reverse charge, and invoicing in public tenders.",
+      mr: "शासकीय निविदांमधील GST नियम, टीडीएस कपात आणि कर अनुपालन यावर वरिष्ठ अधिकाऱ्यांचे मार्गदर्शन."
+    },
+    youtubeUrl: "https://youtu.be/ND1fTRNlm9k",
+    featured: true
+  },
+  {
+    id: "bVXQ3_ZDlgo",
+    youtubeId: "bVXQ3_ZDlgo",
+    thumbnail: "https://i.ytimg.com/vi/bVXQ3_ZDlgo/hqdefault.jpg",
+    category: "gem",
+    tag: "Grampanchayat Tender",
+    tagMr: "ग्रामपंचायत निविदा",
+    duration: "16:35",
+    title: {
+      en: "How Grampanchayat Tenders are Prepared & Critical Rules for Bidders",
+      mr: "ग्रामपंचायत टेंडर कसे बनते | ग्रामपंचायत टेंडर संदर्भात महत्त्वाची माहिती"
+    },
+    desc: {
+      en: "Step-by-step breakdown of 15th Finance Commission works, Grampanchayat e-tenders, administrative approval, and execution.",
+      mr: "१५ वा वित्त आयोग, ग्रामपंचायत ई-निविदा प्रक्रिया, प्रशासकीय मान्यता आणि बिल मंजुरीची माहिती."
+    },
+    youtubeUrl: "https://youtu.be/bVXQ3_ZDlgo",
+    featured: true
   }
 ];

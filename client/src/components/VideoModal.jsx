@@ -24,6 +24,7 @@ export const VideoModal = ({ video, isOpen, onClose }) => {
 
   const title = video.title[language] || video.title.en;
   const desc = video.desc[language] || video.desc.en;
+  const tag = (language === 'mr' && video.tagMr) ? video.tagMr : (video.tag || 'YouTube Lesson');
 
   return (
     <div className="modal-backdrop" onClick={onClose} role="dialog" aria-modal="true">
@@ -31,7 +32,10 @@ export const VideoModal = ({ video, isOpen, onClose }) => {
         
         <div className="modal-header">
           <div className="modal-header-info">
-            <span className="course-badge-pill">{video.duration}</span>
+            <div className="flex items-center gap-2 mb-1.5">
+              <span className="course-badge-pill">{tag}</span>
+              <span className="video-duration-tag">{video.duration}</span>
+            </div>
             <h2 className="modal-title video-modal-title">{title}</h2>
           </div>
           <button
@@ -47,24 +51,14 @@ export const VideoModal = ({ video, isOpen, onClose }) => {
           </button>
         </div>
 
-        <div className="video-player-preview-wrap">
-          <div className="video-thumbnail-stage">
-            <img src={video.thumbnail} alt={title} className="video-stage-img" />
-            <div className="video-stage-overlay">
-              <a
-                href={video.youtubeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="yt-play-btn-large"
-                aria-label={`${t.openInYoutube} - ${title}`}
-              >
-                <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor">
-                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
-              </a>
-              <span className="yt-stage-hint">{t.openInYoutube}</span>
-            </div>
-          </div>
+        <div className="video-player-frame-wrap">
+          <iframe
+            src={`https://www.youtube.com/embed/${video.youtubeId}?autoplay=1&rel=0`}
+            title={title}
+            className="video-player-iframe"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
         </div>
 
         <div className="modal-body-scroll">

@@ -69,9 +69,9 @@
   background-color: #f15a24; /* Clean, rich matte orange */
   /* Touches top of viewport; bottom corners rounded */
   border-radius: 0 0 28px 28px;
-  min-height: 520px;
-  height: 60vh;
-  max-height: 660px;
+  min-height: 624px;
+  height: 72vh;
+  max-height: 792px;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -206,7 +206,7 @@
   bottom: 0; /* Fully anchored inside the bottom boundary */
   right: 0;
   height: 98%;
-  max-height: 600px;
+  max-height: 720px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -225,146 +225,876 @@
 
 
 /* --------------------------------------------------------------------------
-   2. COURSES SECTION
+   1.5 FOUNDER VIDEO SECTION (Left-to-Right Header & Horizontal Phone Center)
+   -------------------------------------------------------------------------- */
+
+.founder-video-section {
+  padding: 80px 0 88px;
+  background-color: var(--color-bg-page);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top: Left-to-Right Editorial Header */
+.founder-video-header-wrap {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 52px;
+}
+
+.device-eyebrow-wrap {
+  margin-bottom: 12px;
+}
+
+.device-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-orange-primary);
+  display: inline-block;
+}
+
+.founder-video-title-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.device-editorial-heading {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  line-height: 0.95;
+  flex: 1;
+  min-width: 320px;
+}
+
+.device-heading-serif {
+  font-family: var(--font-serif);
+  font-size: 3.25rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--color-text-main);
+  display: block;
+}
+
+.device-heading-impact {
+  font-family: var(--font-impact);
+  font-size: 3.65rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-text-main);
+  display: block;
+  margin-top: 2px;
+}
+
+.founder-video-side-action {
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.device-editorial-subtext {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+.device-cta-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.device-watch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #0b0f19;
+  color: #ffffff;
+  padding: 13px 24px;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.14);
+}
+
+.device-watch-btn:hover {
+  background-color: #1e293b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.device-btn-arrow {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.device-watch-btn:hover .device-btn-arrow {
+  transform: translateX(4px);
+}
+
+/* Center: Horizontal Smartphone (Rotated 90° to the Left) */
+.founder-horizontal-phone-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.horizontal-phone-stage {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  perspective: 1400px;
+}
+
+/* Landscape Phone Chassis (Space Titanium Finish) */
+.horizontal-phone-chassis {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 19.5 / 9;
+  background: #16181d;
+  border-radius: 42px;
+  padding: 4px;
+  transform: rotateX(2deg) rotateY(-1deg);
+  transform-style: preserve-3d;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.22),
+    inset 1.5px 0 2px rgba(255, 255, 255, 0.45),
+    inset -1.5px 0 2px rgba(0, 0, 0, 0.8),
+    0 8px 20px rgba(0, 0, 0, 0.35),
+    0 32px 64px -10px rgba(15, 23, 42, 0.28);
+}
+
+.horizontal-phone-stage:hover .horizontal-phone-chassis {
+  transform: rotateX(1deg) rotateY(-0.5deg) translateY(-3px);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.28),
+    inset 1.5px 0 2px rgba(255, 255, 255, 0.55),
+    inset -1.5px 0 2px rgba(0, 0, 0, 0.8),
+    0 12px 28px rgba(0, 0, 0, 0.4),
+    0 40px 72px -10px rgba(15, 23, 42, 0.34);
+}
+
+/* Hardware Buttons on Landscape Orientation (Top & Bottom Edges) */
+.hphone-button-volume-up {
+  position: absolute;
+  top: -3px;
+  left: 120px;
+  width: 42px;
+  height: 3px;
+  background: #242730;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hphone-button-volume-down {
+  position: absolute;
+  top: -3px;
+  left: 172px;
+  width: 42px;
+  height: 3px;
+  background: #242730;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hphone-button-power {
+  position: absolute;
+  bottom: -3px;
+  left: 140px;
+  width: 56px;
+  height: 3px;
+  background: #242730;
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Outer Titanium Chamfer Rim */
+.hphone-titanium-rim {
+  position: absolute;
+  inset: 0;
+  border-radius: 42px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+}
+
+/* Ultra-Thin Precision Screen Bezel */
+.hphone-screen-bezel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #090a0d;
+  border-radius: 38px;
+  padding: 2px;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.95);
+}
+
+/* Camera / Dynamic Sensor Bar on Left Edge (90° Left-Rotated Phone Top) */
+.hphone-left-sensor-bar {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 30;
+  width: 16px;
+  height: 72px;
+  background: #050608;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  box-shadow: 1px 0 3px rgba(0, 0, 0, 0.6);
+}
+
+.hphone-speaker-slit {
+  width: 2.5px;
+  height: 28px;
+  background: #1a1c22;
+  border-radius: 2px;
+}
+
+.hphone-camera-lens {
+  width: 7px;
+  height: 7px;
+  background: #0d1117;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+}
+
+/* Display Glass */
+.hphone-display-glass {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 36px;
+  overflow: hidden;
+  background: #000000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Video inside Horizontal Phone */
+.hphone-video-element {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+  display: block;
+}
+
+/* Glass Reflection */
+.hphone-glass-glare {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.015) 26%,
+    transparent 26.5%
+  );
+  pointer-events: none;
+  z-index: 15;
+}
+
+/* Cinematic Play Overlay (Directly Centered on Video Screen) */
+.hphone-cinematic-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.hphone-display-glass:hover .hphone-cinematic-overlay {
+  background: rgba(0, 0, 0, 0.14);
+}
+
+/* Restrained Circular Cinematic Play Button */
+.phone-cinematic-play-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.phone-play-disc {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 
+    0 4px 18px rgba(0, 0, 0, 0.32),
+    0 1px 3px rgba(0, 0, 0, 0.18);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Subtle optical alignment for equilateral triangle */
+.phone-play-disc svg {
+  margin-left: 3px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.phone-cinematic-play-btn:hover .phone-play-disc {
+  transform: scale(1.07);
+  background: #ffffff;
+  color: var(--color-orange-primary);
+  border-color: rgba(255, 107, 0, 0.4);
+  box-shadow: 
+    0 8px 24px rgba(0, 0, 0, 0.38),
+    0 2px 6px rgba(255, 107, 0, 0.15);
+}
+
+.phone-cinematic-play-btn:focus-visible {
+  outline: none;
+}
+
+.phone-cinematic-play-btn:focus-visible .phone-play-disc {
+  outline: 3px solid var(--color-orange-primary);
+  outline-offset: 4px;
+}
+
+/* Floor Shadows for Horizontal Phone */
+.hphone-contact-shadow {
+  height: 14px;
+  width: 88%;
+  margin: -4px auto 0;
+  background: rgba(0, 0, 0, 0.45);
+  filter: blur(5px);
+  border-radius: 50%;
+}
+
+.hphone-ambient-shadow {
+  height: 36px;
+  width: 82%;
+  margin: -8px auto 0;
+  background: radial-gradient(
+    ellipse at 50% 50%,
+    rgba(15, 23, 42, 0.22) 0%,
+    rgba(15, 23, 42, 0.04) 65%,
+    transparent 80%
+  );
+  filter: blur(12px);
+}
+
+
+/* --------------------------------------------------------------------------
+   2. COURSES SECTION (Exact Reference-Based Editorial Catalogue)
    -------------------------------------------------------------------------- */
 
 .courses-section {
-  padding: 90px 0 80px;
-  background-color: var(--color-bg-page);
+  padding: 100px 0 100px;
+  background-color: #faf8f5; /* Warm ivory / subtle off-white */
+  position: relative;
 }
+
+.courses-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Eyebrow: 02 — LEARN */
+.courses-eyebrow-wrap {
+  margin-bottom: 12px;
+}
+
+.courses-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-orange-primary);
+  display: inline-block;
+}
+
+/* Section Header Row */
+.courses-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+/* Main Heading: Our COURSES. */
+.courses-heading {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  line-height: 0.92;
+  flex-shrink: 0;
+}
+
+.courses-heading-serif {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--color-text-main);
+  display: block;
+}
+
+.courses-heading-impact {
+  font-family: var(--font-impact);
+  font-size: 3.85rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-text-main);
+  display: flex;
+  align-items: baseline;
+  margin-top: 2px;
+}
+
+.courses-heading-dot {
+  color: var(--color-orange-primary);
+  font-family: var(--font-impact);
+  display: inline;
+}
+
+/* Supporting Statement & Benefit Indicators */
+.courses-header-details {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.courses-support-divider {
+  width: 1px;
+  height: 48px;
+  background-color: #e2e8f0;
+}
+
+.courses-support-text {
+  font-family: var(--font-body);
+  font-size: 0.96rem;
+  font-weight: 450;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+  max-width: 290px;
+  margin: 0;
+}
+
+.courses-benefits-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.benefit-indicator-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.benefit-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-main);
+  flex-shrink: 0;
+}
+
+.benefit-label {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+  line-height: 1.3;
+  max-width: 90px;
+}
+
+.benefit-sep {
+  width: 1px;
+  height: 28px;
+  background-color: #e2e8f0;
+}
+
+/* --------------------------------------------------------------------------
+   COURSE CARDS GRID (4 Editorial Cards in a Row)
+   -------------------------------------------------------------------------- */
 
 .courses-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
 }
 
-.course-card {
+.course-editorial-card {
   background: #ffffff;
-  border: 1px solid var(--color-border-light);
-  border-radius: 12px;
-  padding: 26px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 24px;
+  padding: 24px 20px 20px 20px;
   display: flex;
   flex-direction: column;
-  transition: all 0.2s ease;
-  box-shadow: var(--shadow-sm);
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.28s ease;
+  box-shadow: 
+    0 6px 20px rgba(0, 0, 0, 0.03),
+    0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
-.course-card:hover {
-  border-color: var(--color-border-strong);
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
+.course-editorial-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 107, 0, 0.2);
+  box-shadow: 
+    0 16px 36px rgba(0, 0, 0, 0.06),
+    0 2px 6px rgba(0, 0, 0, 0.03);
 }
 
-.course-card-top {
+.course-editorial-card:focus-visible {
+  box-shadow: 0 0 0 3px var(--color-orange-primary);
+}
+
+/* Card Top Header: Number & Category */
+.card-top-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
-.course-card-badge {
+.card-number-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-num-text {
   font-family: var(--font-body);
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  background: var(--color-orange-light);
   color: var(--color-orange-primary);
-  padding: 3px 8px;
-  border-radius: 4px;
-  border: 1px solid var(--color-orange-border);
+  letter-spacing: 0.02em;
 }
 
-.course-duration-tag {
-  font-size: 0.8rem;
-  font-weight: 500;
+.card-num-dash {
+  display: inline-block;
+  width: 18px;
+  height: 1.5px;
+  background-color: var(--color-orange-primary);
+}
+
+.card-category-label {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   color: var(--color-text-subtle);
 }
 
-.course-card-content {
-  flex: 1;
+/* Card Title (DM Serif Display + Anton single-row with right-to-left scroll on overflow) */
+.card-title-block {
+  margin: 0 0 10px 0;
   display: flex;
   flex-direction: column;
+  line-height: 0.98;
 }
 
-.course-card-title {
-  font-size: 1.2rem;
-  font-weight: 700;
+.card-title-serif {
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  font-weight: 400;
   color: var(--color-text-main);
-  margin-bottom: 10px;
-  line-height: 1.35;
+  letter-spacing: -0.01em;
+  display: block;
 }
 
-.course-card-desc {
-  font-size: 0.92rem;
-  color: var(--color-text-muted);
-  line-height: 1.55;
-  margin-bottom: 18px;
+.card-title-impact-marquee-wrap {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  display: block;
+  mask-image: linear-gradient(to right, black 88%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 88%, transparent 100%);
 }
 
-.course-audience-box {
-  margin-top: auto;
-  background: var(--color-bg-subtle);
-  border-radius: 6px;
-  padding: 8px 12px;
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  font-size: 0.82rem;
-  color: var(--color-text-muted);
-  margin-bottom: 20px;
+.card-title-impact-track {
+  display: inline-flex;
+  align-items: baseline;
+  white-space: nowrap;
+  width: max-content;
 }
 
-.audience-icon {
+.card-title-impact-track.is-marquee-active {
+  display: inline-flex;
+  gap: 28px;
+  animation: marqueeImpactRTL 8s linear infinite;
+  will-change: transform;
+}
+
+.course-editorial-card:hover .card-title-impact-track.is-marquee-active {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeImpactRTL {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 14px));
+  }
+}
+
+.card-title-impact {
+  font-family: var(--font-impact);
+  font-size: 2.15rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: var(--color-text-main);
+  display: inline-block;
+  white-space: nowrap;
   flex-shrink: 0;
-  font-size: 0.9rem;
+  margin-top: 2px;
 }
 
-.course-card-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  padding-top: 14px;
-  border-top: 1px solid var(--color-border-light);
-}
-
-.course-view-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  padding: 9px 12px;
-  border: 1px solid var(--color-border-light);
-  border-radius: 6px;
+/* Card Short Description */
+.card-short-description {
   font-family: var(--font-body);
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--color-text-main);
-  transition: all 0.15s ease;
+  font-size: 0.86rem;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--color-text-muted);
+  margin: 0 0 18px 0;
+  min-height: 38px;
 }
 
-.course-view-btn:hover {
-  background-color: var(--color-bg-subtle);
-  border-color: var(--color-border-strong);
+/* Card Visual Image with Subtle Orange Tint & Arced Background */
+.card-visual-wrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 18px;
+  background: radial-gradient(
+    circle at 100% 0%,
+    rgba(255, 107, 0, 0.14) 0%,
+    rgba(255, 237, 213, 0.35) 45%,
+    #f1f5f9 100%
+  );
 }
 
-.course-enquire-btn {
+.card-visual-backdrop {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 80% 20%,
+    rgba(255, 107, 0, 0.15) 0%,
+    transparent 65%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.card-visual-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.course-editorial-card:hover .card-visual-image {
+  transform: scale(1.04);
+}
+
+/* Very subtle 6% orange visual tint */
+.card-visual-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 107, 0, 0.08) 0%,
+    rgba(255, 107, 0, 0.02) 100%
+  );
+  pointer-events: none;
+  z-index: 2;
+  mix-blend-mode: multiply;
+}
+
+/* Card Footer Bar: Metadata List + Circular Arrow */
+.card-footer-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.card-meta-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-meta-item {
   display: inline-flex;
   align-items: center;
+  gap: 5px;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.card-meta-item svg {
+  color: var(--color-text-subtle);
+  flex-shrink: 0;
+}
+
+.card-meta-pipe {
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: #cbd5e1;
+}
+
+/* Action Arrow Circle Buttons */
+.card-arrow-circle-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 9px 12px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid transparent;
+}
+
+/* Active / Featured Orange Arrow (Card 01 in reference) */
+.btn-active-orange {
   background-color: var(--color-orange-primary);
   color: #ffffff;
-  border-radius: 6px;
-  font-family: var(--font-body);
-  font-size: 0.82rem;
-  font-weight: 600;
-  transition: all 0.15s ease;
+  box-shadow: 0 4px 12px rgba(255, 107, 0, 0.35);
 }
 
-.course-enquire-btn:hover {
+.btn-active-orange:hover {
   background-color: var(--color-orange-hover);
+  transform: scale(1.08) translateX(2px);
+  box-shadow: 0 6px 16px rgba(255, 107, 0, 0.45);
+}
+
+/* Default Crisp White Arrow (Cards 02, 03, 04) */
+.btn-default-white {
+  background-color: #ffffff;
+  color: var(--color-text-main);
+  border-color: #e2e8f0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.btn-default-white:hover {
+  background-color: #0b0f19;
+  color: #ffffff;
+  border-color: #0b0f19;
+  transform: scale(1.08) translateX(2px);
+}
+
+/* --------------------------------------------------------------------------
+   CAROUSEL BOTTOM CONTROLS
+   -------------------------------------------------------------------------- */
+
+.courses-carousel-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.carousel-nav-arrow-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  color: var(--color-text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.carousel-nav-arrow-btn:hover:not(:disabled) {
+  background: #0b0f19;
+  color: #ffffff;
+  border-color: #0b0f19;
+  transform: scale(1.05);
+}
+
+.carousel-nav-arrow-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.carousel-progress-track {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.carousel-track-pill {
+  height: 4px;
+  width: 14px;
+  border-radius: 4px;
+  background-color: #cbd5e1;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.carousel-track-pill.pill-active {
+  width: 34px;
+  background-color: var(--color-orange-primary);
 }
 
 
@@ -559,131 +1289,329 @@
   border-color: var(--color-text-main);
 }
 
-.videos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 24px;
-  margin-bottom: 48px;
+/* ==========================================================================
+   FREE KNOWLEDGE HUB - 2 ALTERNATE MOVING STRIPS
+   ========================================================================== */
+
+.youtube-section {
+  padding: 85px 0 95px;
+  background-color: var(--color-bg-page);
+  position: relative;
+  overflow: hidden;
 }
 
-.video-card {
+.knowledge-strips-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 38px 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  overflow: hidden;
+}
+
+/* Subtle edge gradients for smooth infinite ribbon fade effect */
+.knowledge-strips-wrapper::before,
+.knowledge-strips-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 90px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.knowledge-strips-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--color-bg-page) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.knowledge-strips-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, var(--color-bg-page) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.marquee-strip-row {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  user-select: none;
+  padding: 6px 0;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 22px;
+  width: max-content;
+  will-change: transform;
+}
+
+/* Alternate Moving Animation Keyframes */
+.marquee-scroll-left {
+  animation: marqueeScrollLeft 36s linear infinite;
+}
+
+.marquee-scroll-right {
+  animation: marqueeScrollRight 36s linear infinite;
+}
+
+/* Pause on hover on desktop */
+.marquee-strip-row:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeScrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marqueeScrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Marquee Video Card */
+.marquee-video-card {
+  width: 330px;
+  min-width: 330px;
+  max-width: 330px;
   background: #ffffff;
   border: 1px solid var(--color-border-light);
-  border-radius: 12px;
+  border-radius: 14px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  transition: all 0.2s ease;
-  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+  text-align: left;
 }
 
-.video-card:hover {
-  border-color: var(--color-border-strong);
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
+.marquee-video-card:hover,
+.marquee-video-card:focus-visible {
+  border-color: #cbd5e1;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12), 0 0 0 1px rgba(234, 88, 12, 0.18);
+  transform: translateY(-4px) scale(1.015);
+  outline: none;
 }
 
-.video-thumbnail-container {
+.marquee-thumb-container {
   position: relative;
   width: 100%;
-  padding-top: 56.25%;
+  padding-top: 56.25%; /* 16:9 ratio */
   background: #0f172a;
   overflow: hidden;
 }
 
-.video-thumbnail-img {
+.marquee-thumb-img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
-.video-card:hover .video-thumbnail-img {
-  transform: scale(1.03);
+.marquee-video-card:hover .marquee-thumb-img {
+  transform: scale(1.06);
 }
 
-.video-duration-badge {
+.marquee-thumb-gradient {
   position: absolute;
-  bottom: 8px;
-  right: 8px;
-  background: rgba(0, 0, 0, 0.8);
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.25) 0%, transparent 40%, rgba(15, 23, 42, 0.7) 100%);
+  pointer-events: none;
+}
+
+.marquee-tag-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(6px);
+  color: #fb923c;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(251, 146, 60, 0.35);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  z-index: 2;
+}
+
+.marquee-duration-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.85);
   color: #ffffff;
   font-size: 0.72rem;
   font-weight: 700;
-  padding: 2px 6px;
+  padding: 2px 7px;
   border-radius: 4px;
+  z-index: 2;
 }
 
-.video-play-overlay {
+.marquee-play-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(15, 23, 42, 0.25);
+  background: rgba(15, 23, 42, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity 0.15s ease;
+  transition: opacity 0.2s ease;
+  z-index: 3;
 }
 
-.video-card:hover .video-play-overlay {
+.marquee-video-card:hover .marquee-play-overlay {
   opacity: 1;
 }
 
-.video-play-btn {
+.marquee-play-btn {
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  background: #ff0000;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
   color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.35);
+  box-shadow: 0 6px 18px rgba(220, 38, 38, 0.5);
+  transform: scale(0.9);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.video-info-content {
-  padding: 16px 18px 12px;
+.marquee-video-card:hover .marquee-play-btn {
+  transform: scale(1.08);
+}
+
+.marquee-play-btn svg {
+  margin-left: 2px;
+}
+
+.marquee-card-body {
+  padding: 14px 16px 10px;
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.video-title {
-  font-size: 1rem;
+.marquee-video-title {
+  font-family: var(--font-body);
+  font-size: 0.94rem;
   font-weight: 700;
   color: var(--color-text-main);
-  line-height: 1.4;
+  line-height: 1.42;
   margin-bottom: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.video-desc {
-  font-size: 0.85rem;
+.marquee-video-desc {
+  font-family: var(--font-body);
+  font-size: 0.79rem;
   color: var(--color-text-muted);
-  line-height: 1.5;
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: auto;
 }
 
-.video-card-action {
-  padding: 10px 18px 14px;
+.marquee-card-footer {
+  padding: 10px 16px 12px;
   border-top: 1px solid var(--color-border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fafafa;
 }
 
-.watch-link {
+.marquee-watch-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   color: var(--color-orange-primary);
   font-family: var(--font-body);
   font-size: 0.82rem;
+  font-weight: 700;
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.marquee-video-card:hover .marquee-watch-btn {
+  color: #ea580c;
+  transform: translateX(2px);
+}
+
+.marquee-yt-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.72rem;
   font-weight: 600;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.marquee-yt-pill svg {
+  color: #ef4444;
+}
+
+/* Video Player Modal Iframe */
+.video-player-frame-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 ratio */
+  background: #000000;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.video-player-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-duration-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  background: var(--color-bg-subtle);
+  padding: 2px 8px;
+  border-radius: 9999px;
+  border: 1px solid var(--color-border-light);
 }
 
 /* Channel Callout Banner */
 .yt-channel-banner {
   background: var(--color-bg-subtle);
   border: 1px solid var(--color-border-light);
-  border-radius: 12px;
+  border-radius: 14px;
   padding: 24px 32px;
   display: flex;
   align-items: center;
@@ -701,18 +1629,18 @@
 .yt-icon-box {
   width: 48px;
   height: 48px;
-  border-radius: 10px;
+  border-radius: 12px;
   background: #ff0000;
   color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 3px 10px rgba(255, 0, 0, 0.25);
+  box-shadow: 0 3px 12px rgba(255, 0, 0, 0.25);
   flex-shrink: 0;
 }
 
 .yt-banner-title {
-  font-size: 1.15rem;
+  font-size: 1.12rem;
   font-weight: 700;
   color: var(--color-text-main);
   margin-bottom: 2px;
@@ -730,7 +1658,7 @@
   background: #0b0f19;
   color: #ffffff;
   padding: 10px 20px;
-  border-radius: 6px;
+  border-radius: 8px;
   font-family: var(--font-body);
   font-size: 0.85rem;
   font-weight: 600;
@@ -739,6 +1667,7 @@
 
 .yt-subscribe-btn:hover {
   background: #1e293b;
+  transform: translateY(-1px);
 }
 
 
@@ -801,60 +1730,18 @@
   color: rgba(255, 255, 255, 0.8);
 }
 
-.founder-video-snippet {
-  border-radius: 8px;
+.founder-secondary-photo-wrap {
+  border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--color-border-light);
+  background: var(--color-bg-subtle);
+  box-shadow: var(--shadow-sm);
 }
 
-.founder-video-thumb-wrap {
-  position: relative;
+.founder-secondary-photo {
   width: 100%;
-  height: 130px;
-  cursor: pointer;
-}
-
-.founder-video-thumb {
-  width: 100%;
-  height: 100%;
+  height: 160px;
   object-fit: cover;
-}
-
-.founder-video-play-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
-  background: rgba(241, 90, 36, 0.9);
-  color: #ffffff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
-  transition: transform 0.15s ease;
-}
-
-.founder-video-thumb-wrap:hover .founder-video-play-btn {
-  transform: translate(-50%, -50%) scale(1.1);
-}
-
-.founder-video-label {
-  position: absolute;
-  bottom: 8px;
-  left: 10px;
-  right: 10px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #ffffff;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
-}
-
-.founder-video-element {
-  width: 100%;
-  height: auto;
   display: block;
 }
 
@@ -1537,6 +2424,21 @@
   .hero-headline-impact {
     font-size: 3.75rem;
   }
+  .founder-video-header-wrap {
+    margin-bottom: 36px;
+  }
+  .founder-video-title-row {
+    gap: 32px;
+  }
+  .device-heading-serif {
+    font-size: 2.75rem;
+  }
+  .device-heading-impact {
+    font-size: 3.1rem;
+  }
+  .horizontal-phone-stage {
+    max-width: 620px;
+  }
 }
 
 @media (max-width: 860px) {
@@ -1551,17 +2453,21 @@
     min-height: auto;
     height: auto;
     border-radius: 0 0 24px 24px;
-    padding: 48px 0 16px;
+    padding: 48px 0 0;
     overflow: hidden;
   }
   .hero-inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     grid-template-columns: 1fr;
-    padding: 0 20px;
-    gap: 20px;
+    padding: 0 20px 0;
+    gap: 0;
+    margin-bottom: 0;
   }
   .hero-content-col {
     max-width: 100%;
-    padding: 10px 0 0;
+    padding: 10px 0 24px;
   }
   .hero-headline-serif {
     font-size: 2.75rem;
@@ -1570,19 +2476,83 @@
     font-size: 3.25rem;
   }
   .hero-founder-col {
-    position: static;
-    height: 260px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+    display: flex;
+    align-items: flex-end;
     justify-content: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 0;
   }
   .hero-founder-frame {
     position: relative;
     bottom: 0;
-    height: 100%;
-    max-height: 260px;
+    width: 100%;
+    height: auto;
+    max-height: 380px;
+    display: flex;
+    align-items: flex-end;
     justify-content: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 0;
   }
   .hero-founder-img {
+    display: block;
+    height: auto;
+    max-height: 360px;
+    width: auto;
+    max-width: 88%;
+    object-fit: contain;
     object-position: center bottom;
+    vertical-align: bottom;
+    margin-bottom: 0;
+  }
+
+  .founder-video-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .founder-video-side-action {
+    max-width: 100%;
+  }
+
+  .horizontal-phone-chassis {
+    transform: none !important;
+    border-radius: 28px;
+    padding: 3px;
+  }
+
+  .hphone-screen-bezel {
+    border-radius: 25px;
+  }
+
+  .hphone-display-glass {
+    border-radius: 23px;
+  }
+
+  .phone-play-disc {
+    width: 54px;
+    height: 54px;
+  }
+
+  .phone-play-disc svg {
+    width: 20px;
+    height: 20px;
+    margin-left: 2px;
+  }
+
+  .device-heading-serif {
+    font-size: 2.4rem;
+  }
+
+  .device-heading-impact {
+    font-size: 2.8rem;
   }
 
   .founder-main-grid,
@@ -1605,7 +2575,62 @@
     grid-template-columns: 1fr;
   }
 
-  .course-card-footer {
-    grid-template-columns: 1fr;
+  /* Courses Section Responsive Adaptations */
+  .courses-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 36px;
+  }
+
+  .courses-heading-serif {
+    font-size: 2.75rem;
+  }
+
+  .courses-heading-impact {
+    font-size: 3.1rem;
+  }
+
+  .courses-support-divider {
+    display: none;
+  }
+
+  .courses-header-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .courses-benefits-group {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .courses-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding-bottom: 16px;
+    scrollbar-width: none;
+  }
+
+  .courses-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .course-editorial-card {
+    min-width: 85%;
+    max-width: 85%;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1120px) {
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }

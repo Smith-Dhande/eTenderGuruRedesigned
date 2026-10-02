@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { LanguageProvider } from './context/LanguageContext';
 import { HeroSection } from './components/HeroSection';
+import { FounderVideoSection } from './components/FounderVideoSection';
 import { CoursesSection } from './components/CoursesSection';
 import { YouTubeSection } from './components/YouTubeSection';
 import { FounderSection } from './components/FounderSection';
@@ -36,7 +37,10 @@ function MainApp() {
       {/* 1. Hero Section (Strictly following herosection-design.md) */}
       <HeroSection onExploreCourses={handleExploreCourses} />
 
-      {/* 2. Structured Courses Section */}
+      {/* 2. Founder Video Device Section (Realistic Physical Tablet Left / Editorial Text Right) */}
+      <FounderVideoSection />
+
+      {/* 3. Structured Courses Section */}
       <CoursesSection onSelectCourseForEnquiry={handleSelectCourseForEnquiry} />
 
       {/* 3. YouTube Educational Video Lessons */}
