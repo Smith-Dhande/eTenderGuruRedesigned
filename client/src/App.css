@@ -306,6 +306,170 @@
   }
 }
 
+/* --------------------------------------------------------------------------
+   HERO ENTRANCE MOTION DESIGN PASS (Editorial & Cinematic Staggered Sequence)
+   -------------------------------------------------------------------------- */
+
+.hero-editorial-wordmark {
+  animation: heroWordmarkEntrance 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.12s backwards;
+  will-change: transform, opacity;
+}
+
+.hero-founder-frame {
+  animation: heroFounderEntrance 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.22s backwards;
+  will-change: transform, opacity;
+}
+
+.hero-eyebrow-wrap {
+  animation: heroEyebrowEntrance 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.35s backwards;
+  will-change: transform, opacity;
+}
+
+.hero-headline-serif {
+  animation: heroHeadlineSerifEntrance 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.45s backwards;
+  will-change: transform, opacity;
+}
+
+.hero-headline-impact {
+  animation: heroHeadlineImpactEntrance 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.60s backwards;
+  will-change: transform, opacity;
+}
+
+.hero-editorial-subtext {
+  animation: heroSubtextEntrance 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.80s backwards;
+  will-change: transform, opacity;
+}
+
+.hero-cta-wrap {
+  animation: heroCtaEntrance 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.95s backwards;
+  will-change: transform, opacity;
+}
+
+.lang-toggle-wrapper {
+  animation: heroLangFadeEntrance 0.35s ease 0.1s backwards;
+}
+
+/* Editorial Keyframes */
+@keyframes heroWordmarkEntrance {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -46%) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes heroFounderEntrance {
+  0% {
+    opacity: 0;
+    transform: translate3d(50px, 20px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes heroEyebrowEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroHeadlineSerifEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroHeadlineImpactEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroSubtextEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroCtaEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes heroLangFadeEntrance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Mobile Motion Scaling (Refined travel distance for small viewports) */
+@media (max-width: 640px) {
+  @keyframes heroFounderEntranceMobile {
+    0% {
+      opacity: 0;
+      transform: translate3d(24px, 12px, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .hero-founder-frame {
+    animation-name: heroFounderEntranceMobile;
+  }
+}
+
+/* Accessibility: Instantly render final layout when user prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero-editorial-wordmark,
+  .hero-founder-frame,
+  .hero-eyebrow-wrap,
+  .hero-headline-serif,
+  .hero-headline-impact,
+  .hero-editorial-subtext,
+  .hero-cta-wrap,
+  .lang-toggle-wrapper {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
 
 /* --------------------------------------------------------------------------
    1.5 FOUNDER VIDEO SECTION (Left-to-Right Header & Horizontal Phone Center)
