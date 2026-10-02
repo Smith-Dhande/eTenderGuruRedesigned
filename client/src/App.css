@@ -2860,14 +2860,30 @@
   border-color: var(--color-orange-primary);
 }
 
-/* Submit CTA */
+/* Action Grid & Submit CTA */
+.studio-action-grid {
+  align-items: flex-end;
+}
+
+.studio-submit-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-width: 0;
+}
+
+.studio-submit-label-spacer {
+  visibility: hidden;
+  user-select: none;
+}
+
 .studio-submit-btn {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 15px 24px;
+  padding: 14px 28px;
   background: var(--color-orange-primary);
   color: #ffffff;
   border: none;
@@ -2878,8 +2894,7 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.2s ease;
-  box-shadow: 0 6px 20px rgba(241, 90, 36, 0.28);
-  margin-top: 4px;
+  box-shadow: 0 4px 16px rgba(241, 90, 36, 0.26);
   box-sizing: border-box;
 }
 
@@ -3249,6 +3264,10 @@
 
   .studio-input-grid {
     grid-template-columns: 1fr;
+  }
+
+  .studio-submit-label-spacer {
+    display: none;
   }
 
   .studio-dispatch-pane {
