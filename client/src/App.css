@@ -3307,11 +3307,49 @@
   overflow: hidden;
 }
 
+/* Decorative Editorial Outlined Wordmark (Bottom-Right Background) */
+.footer-editorial-wordmark {
+  position: absolute;
+  bottom: 8px;
+  right: clamp(10px, 3vw, 40px);
+  width: max-content;
+  font-family: var(--font-serif);
+  font-size: clamp(3.8rem, 8.5vw, 8.2rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.015em;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.22);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 992px) {
+  .footer-editorial-wordmark {
+    bottom: 6px;
+    font-size: clamp(2.8rem, 7vw, 4.5rem);
+    -webkit-text-stroke: 1.1px rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-editorial-wordmark {
+    bottom: 4px;
+    font-size: clamp(1.8rem, 8vw, 2.8rem);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.16);
+  }
+}
+
 .footer-inner-container {
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
   padding: 0 24px;
+  position: relative;
+  z-index: 5;
 }
 
 .footer-top-grid {
@@ -3322,7 +3360,7 @@
   align-items: start;
 }
 
-/* Big Crisp Brand Logo & Stacked Editorial Heading */
+/* Big Crisp Brand Logo */
 .footer-brand-identity {
   display: flex;
   flex-direction: column;
@@ -3336,8 +3374,10 @@
 }
 
 .footer-brand-logo {
-  height: 88px; /* Increased, balanced logo size */
+  height: 120px; /* Prominent large logo */
   width: auto;
+  max-width: 280px;
+  object-fit: contain;
   filter: brightness(0) invert(1) drop-shadow(0 6px 18px rgba(0, 0, 0, 0.18));
   display: block;
 }
@@ -3451,20 +3491,20 @@
   letter-spacing: -0.005em;
 }
 
-/* Bottom Bar: Clean Inline Content with White Heart & No Black Background */
+/* Bottom Bar: Clean Inline Content with White Heart & Left Alignment */
 .footer-bottom-bar {
   padding-top: 26px;
   border-top: 1px solid rgba(255, 255, 255, 0.22);
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-start;
+  text-align: left;
 }
 
 .footer-bottom-content {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 10px;
   color: rgba(255, 255, 255, 0.95);

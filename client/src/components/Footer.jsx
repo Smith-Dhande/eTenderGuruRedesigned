@@ -16,12 +16,17 @@ export const Footer = () => {
   return (
     <div className="footer-viewport-wrapper">
       <footer className="footer-banner" id="footer">
+        {/* Decorative Outlined Editorial Wordmark (Bottom-Right Background) */}
+        <div className="footer-editorial-wordmark" aria-hidden="true">
+          <span>eTender Guru</span>
+        </div>
+
         <div className="footer-inner-container">
           
           {/* Footer Top Grid */}
           <div className="footer-top-grid">
             
-            {/* Brand Column */}
+            {/* Brand Column (Logo Only) */}
             <div className="footer-brand-col">
               <div className="footer-brand-identity">
                 <div className="footer-logo-wrap">
@@ -30,15 +35,6 @@ export const Footer = () => {
                     alt="eTender Guru Logo"
                     className="footer-brand-logo"
                   />
-                </div>
-
-                {/* Editorial Signature Typography: Serif + Anton Impact (Stacked 2-line) */}
-                <div className="footer-brand-heading">
-                  <span className="footer-brand-serif">{language === 'mr' ? 'ई-टेंडर' : 'eTender'}</span>
-                  <span className="footer-brand-impact">
-                    {language === 'mr' ? 'गुरू' : 'GURU'}
-                    <span className="footer-brand-dot">.</span>
-                  </span>
                 </div>
               </div>
 
