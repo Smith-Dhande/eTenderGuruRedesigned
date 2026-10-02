@@ -15,32 +15,52 @@ export const FounderVideoSection = () => {
   const [pointerState, setPointerState] = useState('idle'); // 'idle' | 'entering' | 'moving' | 'tapping' | 'fading' | 'done'
   const [isSimulatedClick, setIsSimulatedClick] = useState(false);
 
-  // Reliable playback executor (handles browser audio-autoplay policies gracefully)
-  const executePlay = (isManual = false) => {
+  // A) Animated / programmatic playback: unmuted first -> if rejected, ONE muted fallback
+  const executeAutoPlay = () => {
     if (!videoRef.current) return;
-    
-    if (isManual) {
-      videoRef.current.muted = false;
-    }
 
-    const playPromise = videoRef.current.play();
+    const video = videoRef.current;
+    video.muted = false;
+
+    const playPromise = video.play();
     if (playPromise !== undefined) {
       playPromise
         .then(() => {
           setIsPlaying(true);
         })
-        .catch((err) => {
-          console.warn('Autoplay unmuted blocked by browser policy. Retrying with mute:', err);
-          // If browser restricts unmuted programmatic autoplay, start muted so video ACTUALLY plays
-          if (videoRef.current) {
-            videoRef.current.muted = true;
-            videoRef.current
-              .play()
-              .then(() => setIsPlaying(true))
-              .catch((e) => console.error('Video playback failed:', e));
-          }
+        .catch(() => {
+          // Browser blocked unmuted autoplay.
+          // ONE fallback attempt with muted playback.
+          if (!videoRef.current) return;
+          videoRef.current.muted = true;
+
+          videoRef.current
+            .play()
+            .then(() => {
+              setIsPlaying(true);
+            })
+            .catch((err) => {
+              console.warn('Video autoplay failed:', err);
+            });
         });
     }
+  };
+
+  // B) Real user playback: genuine user gesture, unmuted with sound
+  const handleManualPlay = () => {
+    if (!videoRef.current) return;
+
+    const video = videoRef.current;
+    video.muted = false;
+
+    video
+      .play()
+      .then(() => {
+        setIsPlaying(true);
+      })
+      .catch((err) => {
+        console.warn('Manual video playback failed:', err);
+      });
   };
 
   const togglePlay = () => {
@@ -49,7 +69,7 @@ export const FounderVideoSection = () => {
       videoRef.current.pause();
       setIsPlaying(false);
     } else {
-      executePlay(true);
+      handleManualPlay();
     }
   };
 
@@ -98,7 +118,7 @@ export const FounderVideoSection = () => {
 
                 // Step 4: Video ACTUALLY starts playing
                 setTimeout(() => {
-                  executePlay(false);
+                  executeAutoPlay();
 
                   setIsSimulatedClick(false);
                   setPointerState('fading');
