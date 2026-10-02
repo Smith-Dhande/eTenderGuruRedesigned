@@ -80,10 +80,17 @@ export const translations = {
 
     // Founder Section
     founder: {
+      eyebrow: "04 — LEAD INSTRUCTOR & EXPERT",
       badge: "LEAD INSTRUCTOR & EXPERT",
+      titleSerif: "Real Ground Experience",
+      titleImpact: "ZERO FLUFF.",
       title: "Real Ground Experience. Zero Fluff.",
       subtitle: "Bridging the gap between complex government procurement rules and ambitious contractors with straightforward, actionable guidance.",
-      aboutHeading: "About the Founder",
+      support: "Bridging the gap between complex government procurement rules and ambitious contractors with straightforward, actionable guidance.",
+      roleTitle: "Founder & Lead Tender Consultant",
+      experienceTag: "10+ Years Ground Expertise",
+      verifiedTag: "Government E-Procurement Practitioner",
+      aboutHeading: "Practical Ground Experience Behind eTender Guru",
       bio1: "With extensive hands-on experience navigating government procurement portals, tender documentation, bid qualifications, and execution processes, eTender Guru was founded to demystify public contracting.",
       bio2: "Our mission is to empower MSMEs, civil & electrical contractors, startups, and suppliers across Maharashtra and India to confidently bid on government contracts without relying on expensive middlemen or third-party brokers.",
       quote: "Government tendering is not a lottery; it is a structured compliance system. Once you understand the rules, qualification becomes a predictable science.",
@@ -105,7 +112,8 @@ export const translations = {
           desc: "Equipping you with the complete capability to search, evaluate, prepare, and submit tenders independently."
         }
       ],
-      videoBadgeText: "Founder's Briefing on E-Tendering Strategy"
+      enquireCta: "Connect with Instructor",
+      coursesCta: "Explore All Courses"
     },
 
     // Resources & Educational Hub Section
@@ -318,13 +326,20 @@ export const translations = {
 
     // Founder Section
     founder: {
+      eyebrow: "०४ — मुख्य मार्गदर्शक व तज्ज्ञ",
       badge: "मुख्य प्रशिक्षक व मार्गदर्शक",
+      titleSerif: "प्रत्यक्ष जमिनीवरील अनुभव",
+      titleImpact: "कोणतीही दिशाभूल नाही.",
       title: "प्रत्यक्ष जमिनीवरील अनुभव. कोणतीही दिशाभूल नाही.",
       subtitle: "जटिल शासकीय नियम आणि महत्त्वाकांक्षी कंत्राटदार यांच्यातील अंतर साध्या आणि कृतीयोग्य मार्गदर्शनाने दूर करत आहोत.",
-      aboutHeading: "संस्थापकाबद्दल",
+      support: "जटिल शासकीय नियम आणि महत्त्वाकांक्षी कंत्राटदार यांच्यातील अंतर साध्या आणि कृतीयोग्य मार्गदर्शनाने दूर करत आहोत.",
+      roleTitle: "संस्थापक व मुख्य निविदा तज्ज्ञ",
+      experienceTag: "१०+ वर्षांचा प्रत्यक्ष जमिनीवरील अनुभव",
+      verifiedTag: "शासकीय ई-निविदा पोर्टल तज्ज्ञ",
+      aboutHeading: "ई-टेंडर गुरुमागील खरा अनुभव",
       bio1: "शासकीय ई-निविदा पोर्टल, कागदपत्रांची तयारी, पात्रता निकष आणि प्रत्यक्ष निविदा प्रक्रियेतील प्रदीर्घ व्यावहारिक अनुभवानंतर, ई-टेंडर गुरुची स्थापना शासकीय निविदा प्रक्रिया सुलभ करण्यासाठी झाली.",
       bio2: "महाराष्ट्र आणि देशभरातील एमएसएमई, सिव्हिल आणि इलेक्ट्रिकल कंत्राटदार, नवउद्योजक व पुरवठादारांना कोणत्याही मध्यस्थाशिवाय स्वतःच्या बळावर निविदा भरण्यास सक्षम करणे हे आमचे मुख्य ध्येय आहे.",
-      quote: "शासकीय निविदा ही लॉटरी नसून नियमांवर आधारलेली अचूक प्रणाली आहे. नियम समजले की निविदा मिळवणे सोपे होते.",
+      quote: "शासकीय निविदा ही लॉटरी नसून नियमांवर आधारलेली अचूक प्रणाली आहे. नियम समजले की निविदा जिंकणे हे एक अचूक शास्त्र बनते.",
       pillars: [
         {
           title: "१००% व्यावहारिक शिक्षण",
@@ -343,7 +358,8 @@ export const translations = {
           desc: "मध्यस्थांवर विसंबून न राहता स्वतः निविदा शोधणे, तपासणे आणि अचूकपणे ऑनलाइन सबमिट करण्याची क्षमता."
         }
       ],
-      videoBadgeText: "ई-टेंडरिंग रणनीतीवरील संस्थापकाचे मार्गदर्शन"
+      enquireCta: "प्रशिक्षकांशी संपर्क साधा",
+      coursesCta: "कोर्सेस पहा"
     },
 
     // Resources & Educational Hub Section
