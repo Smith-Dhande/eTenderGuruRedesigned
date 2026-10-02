@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { LanguageProvider } from './context/LanguageContext';
+import { LanguageToggle } from './components/LanguageToggle';
 import { HeroSection } from './components/HeroSection';
 import { FounderVideoSection } from './components/FounderVideoSection';
 import { CoursesSection } from './components/CoursesSection';
@@ -34,6 +35,9 @@ function MainApp() {
 
   return (
     <div className="etender-app-root">
+      {/* Persistent Floating Language Toggle */}
+      <LanguageToggle />
+
       {/* 1. Hero Section (Strictly following herosection-design.md) */}
       <HeroSection onExploreCourses={handleExploreCourses} />
 

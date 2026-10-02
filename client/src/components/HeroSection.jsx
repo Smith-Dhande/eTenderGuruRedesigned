@@ -1,7 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../data/translations';
-import { LanguageToggle } from './LanguageToggle';
 
 export const HeroSection = ({ onExploreCourses }) => {
   const { language } = useLanguage();
@@ -9,11 +8,6 @@ export const HeroSection = ({ onExploreCourses }) => {
 
   return (
     <div className="hero-viewport-wrapper">
-      {/* Language Toggle in Top-Right Corner */}
-      <div className="hero-top-controls">
-        <LanguageToggle />
-      </div>
-
       <header className="hero-banner" id="hero">
         {/* Decorative Outlined Editorial Wordmark Layer */}
         <div className="hero-editorial-wordmark" aria-hidden="true">
