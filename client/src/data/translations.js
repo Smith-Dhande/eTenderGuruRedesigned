@@ -116,12 +116,17 @@ export const translations = {
       coursesCta: "Explore All Courses"
     },
 
-    // Resources & Educational Hub Section
+    // Resources & Educational Hub Section (Tender Blueprint)
     resources: {
+      eyebrow: "05 — TENDER BLUEPRINT",
       badge: "TENDER BLUEPRINT",
-      title: "The E-Tender Lifecycle & Essential Checklist",
+      titleSerif: " E-Tender Lifecycle &",
+      titleImpact: "STEP-BY-STEP BLUEPRINT.",
+      title: " E-Tender Lifecycle & Essential Checklist",
       subtitle: "Understand the core stages of public procurement and the key documentation required before placing your first bid.",
+      support: "Understand the 6 critical stages of public procurement from digital setup to final winning bid submission.",
       roadmapTitle: "Step-by-Step E-Tendering Roadmap",
+      stepPrefix: "STEP",
       roadmap: [
         {
           step: "01",
@@ -154,8 +159,19 @@ export const translations = {
           desc: "Digitally sign each packet, upload documents before closing date/time, and preserve the final submission acknowledgement token."
         }
       ],
+      checklistEyebrow: "BIDDER QUALIFICATION VAULT",
+      checklistTitleSerif: "Mandatory Document",
+      checklistTitleImpact: "CHECKLIST FOR BIDDERS.",
       checklistTitle: "Mandatory Document Checklist for Bidders",
-      checklistDesc: "Ensure you have these primary documents ready and verified before participating in government tenders:",
+      checklistDesc: "Verify your compliance against the 10 core verification documents required across Maharashtra & Central e-tendering portals.",
+      checklistExpandCta: "Inspect & Verify 10 Mandatory Documents",
+      checklistCollapseCta: "Collapse Document Checklist",
+      readinessScoreLabel: "Tender Readiness Score",
+      readinessItemsChecked: "Documents Ready",
+      filterAll: "All (10)",
+      filterMandatory: "Mandatory (7)",
+      filterExemption: "Exemption / Licensing (3)",
+      resetChecks: "Clear Checks",
       checklistItems: [
         { name: "Class 3 DSC (Signing & Encryption)", mandatory: true, category: "Security" },
         { name: "GST Registration Certificate with Latest Returns", mandatory: true, category: "Taxation" },
@@ -168,7 +184,12 @@ export const translations = {
         { name: "MSME / Udyam Certificate (for EMD / Tender Fee Exemption)", mandatory: false, category: "Exemption" },
         { name: "Power of Attorney / Authorization Letter", mandatory: true, category: "Authorization" }
       ],
+      faqEyebrow: "CLARITY & GUIDANCE",
+      faqTitleSerif: "Frequently Asked",
+      faqTitleImpact: "QUESTIONS & ANSWERS.",
       faqTitle: "Frequently Asked Questions",
+      faqHelpPrompt: "Have a specific question about your tender qualification?",
+      faqHelpCta: "Ask Our Experts",
       faqs: [
         {
           q: "Can a beginner or a new business apply for government tenders?",
@@ -362,12 +383,17 @@ export const translations = {
       coursesCta: "कोर्सेस पहा"
     },
 
-    // Resources & Educational Hub Section
+    // Resources & Educational Hub Section (Tender Blueprint)
     resources: {
+      eyebrow: "०५ — निविदा आराखडा",
       badge: "निविदा आराखडा",
+      titleSerif: "ई-निविदा प्रक्रिया व",
+      titleImpact: "टप्प्याटप्प्याने आराखडा.",
       title: "ई-निविदा प्रक्रिया आणि आवश्यक कागदपत्रांची यादी",
       subtitle: "शासकीय निविदा प्रक्रियेचे प्रमुख टप्पे आणि पहिली निविदा भरण्यापूर्वी लागणारी अत्यावश्यक कागदपत्रे समजून घ्या.",
+      support: "डिजिटल सेटअपपासून ते अंतिम निविदा जिंकण्यापर्यंतचे ६ महत्त्वपूर्ण टप्पे समजून घ्या.",
       roadmapTitle: "ई-निविदा प्रक्रियेचे ६ सोपे टप्पे",
+      stepPrefix: "टप्पा",
       roadmap: [
         {
           step: "०१",
@@ -400,8 +426,19 @@ export const translations = {
           desc: "प्रत्येक दस्तऐवजावर डिजिटल स्वाक्षरी करून अंतिम मुदतीपूर्वी अपलोड करणे व पावती सुरक्षित ठेवणे."
         }
       ],
+      checklistEyebrow: "अत्यावश्यक कागदपत्रे",
+      checklistTitleSerif: "निविदाकारांसाठी आवश्यक",
+      checklistTitleImpact: "कागदपत्रांची यादी.",
       checklistTitle: "कंत्राटदारांसाठी आवश्यक कागदपत्रांची यादी",
-      checklistDesc: "शासकीय निविदा भरताना खालील मुख्य कागदपत्रे नेहमी अद्ययावत असणे आवश्यक आहे:",
+      checklistDesc: "महाराष्ट्र आणि केंद्रीय ई-निविदा पोर्टलवर तांत्रिक बोलीसाठी आवश्यक असणारी १० मुख्य कागदपत्रे तपासा.",
+      checklistExpandCta: "१० मुख्य कागदपत्रे उघडा आणि तपासा",
+      checklistCollapseCta: "कागदपत्रांची यादी लपवा",
+      readinessScoreLabel: "निविदा पूर्वतयारी स्कोअर",
+      readinessItemsChecked: "कागदपत्रे तयार",
+      filterAll: "सर्व कागदपत्रे (१०)",
+      filterMandatory: "फक्त अनिवार्य (७)",
+      filterExemption: "सवलती / परवाने (३)",
+      resetChecks: "रिसेट करा",
       checklistItems: [
         { name: "क्लास ३ डिजिटल सिग्नेचर (DSC - Signing & Encryption)", mandatory: true, category: "सुरक्षा" },
         { name: "जीएसटी नोंदणी प्रमाणपत्र व ताजी रिटर्न पावती", mandatory: true, category: "कर प्रणाली" },
@@ -414,7 +451,12 @@ export const translations = {
         { name: "उद्यम / MSME प्रमाणपत्र (EMD फी सवलतीसाठी)", mandatory: false, category: "सवलत" },
         { name: "अधिकृतता पत्र किंवा कुलमुखत्यारपत्र (Power of Attorney)", mandatory: true, category: "अधिकार" }
       ],
+      faqEyebrow: "मार्गदर्शन व उत्तरे",
+      faqTitleSerif: "नेहमी विचारले जाणारे",
+      faqTitleImpact: "महत्त्वाचे प्रश्न (FAQ).",
       faqTitle: "वारंवार विचारले जाणारे प्रश्न (FAQ)",
+      faqHelpPrompt: "आपल्या निविदेबद्दल काही विशिष्ट शंका किंवा प्रश्न आहेत का?",
+      faqHelpCta: "तज्ज्ञांशी चर्चा करा",
       faqs: [
         {
           q: "नवीन किंवा नवशिक्या व्यावसायिक शासकीय निविदा भरू शकतो का?",

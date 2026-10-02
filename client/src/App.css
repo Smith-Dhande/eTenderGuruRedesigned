@@ -2003,199 +2003,560 @@
 
 
 /* --------------------------------------------------------------------------
-   5. RESOURCES SECTION
+   5. RESOURCES & TENDER BLUEPRINT SECTION (SPLIT BANNER LAYOUT)
    -------------------------------------------------------------------------- */
 
 .resources-section {
-  padding: 80px 0;
+  padding: 50px 0 70px;
   background-color: var(--color-bg-page);
 }
 
-.subsection-title {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--color-text-main);
-  margin-bottom: 20px;
+/* 1. Main 6-Stage Tender Blueprint Orange Banner (Full-Bleed, Left Marquee + Right Text) */
+.blueprint-banner-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.roadmap-block {
-  margin-bottom: 56px;
+.blueprint-orange-banner {
+  background-color: #f15a24; /* Rich matte orange */
+  border-radius: 0; /* Straight edges / No rounded corners */
+  padding: 44px 0;
+  color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 12px 32px rgba(241, 90, 36, 0.16);
 }
 
-.roadmap-grid {
+.blueprint-split-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 18px;
+  grid-template-columns: 1fr 440px;
+  gap: 36px;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.roadmap-step-card {
-  background: var(--color-bg-subtle);
-  border: 1px solid var(--color-border-light);
-  border-radius: 8px;
-  padding: 20px;
+/* Left Column: Moving Marquee */
+.blueprint-left-marquee-col {
+  overflow: hidden;
+  position: relative;
+  min-width: 0;
+  width: 100%;
+}
+
+.blueprint-marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 8px 0;
+  mask-image: linear-gradient(to right, black 0%, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 0%, black 90%, transparent 100%);
+}
+
+.blueprint-marquee-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: blueprintMarqueeRTL 38s linear infinite;
+  will-change: transform;
+}
+
+.blueprint-marquee-container:hover .blueprint-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes blueprintMarqueeRTL {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 10px));
+  }
+}
+
+/* Unique Luxe Porcelain Cards on Orange Surface */
+.blueprint-step-card {
+  background: linear-gradient(145deg, #ffffff 0%, #fffdfa 100%);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  border-radius: 18px;
+  width: 360px;
+  min-width: 360px;
+  flex-shrink: 0;
+  padding: 24px 26px 22px;
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 
+    0 14px 36px rgba(0, 0, 0, 0.14),
+    0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+}
+
+.blueprint-step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 
+    0 20px 44px rgba(0, 0, 0, 0.2),
+    0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Giant Subtle Watermark Numeral */
+.blueprint-watermark-num {
+  font-family: var(--font-impact);
+  font-size: 6.2rem;
+  line-height: 0.75;
+  color: rgba(241, 90, 36, 0.09);
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+  letter-spacing: -0.04em;
+}
+
+.blueprint-step-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
   position: relative;
-  transition: all 0.15s ease;
+  z-index: 2;
 }
 
-.roadmap-step-card:hover {
-  background: #ffffff;
-  border-color: var(--color-border-strong);
-  box-shadow: var(--shadow-sm);
+.blueprint-step-dash {
+  width: 24px;
+  height: 2.5px;
+  background-color: #ea580c;
+  border-radius: 2px;
+  display: inline-block;
 }
 
-.step-badge {
+.blueprint-step-tag {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #ea580c;
+}
+
+.blueprint-step-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #0b0f19;
+  line-height: 1.25;
+  margin: 0 0 8px 0;
+  position: relative;
+  z-index: 2;
+  letter-spacing: -0.01em;
+}
+
+.blueprint-step-desc {
+  font-family: var(--font-body);
+  font-size: 0.83rem;
+  color: #475569;
+  line-height: 1.48;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* Right Column: Heading & Supporting Text */
+.blueprint-right-text-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 2;
+  padding-right: 48px;
+  padding-left: 12px;
+}
+
+.blueprint-eyebrow-wrap {
+  margin-bottom: 2px;
+}
+
+.blueprint-eyebrow {
   font-family: var(--font-body);
   font-size: 0.78rem;
-  font-weight: 800;
-  background: var(--color-orange-primary);
-  color: #ffffff;
-  padding: 3px 10px;
-  border-radius: 4px;
-  display: inline-block;
-  align-self: flex-start;
-  margin-bottom: 12px;
-}
-
-.step-title {
-  font-size: 1rem;
   font-weight: 700;
-  color: var(--color-text-main);
-  margin-bottom: 6px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.95);
 }
 
-.step-desc {
-  font-size: 0.85rem;
+.blueprint-heading {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.94;
+  margin: 0;
+}
+
+.blueprint-heading-serif {
+  font-family: var(--font-serif);
+  font-size: 2.45rem;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.blueprint-heading-impact {
+  font-family: var(--font-impact);
+  font-size: 2.85rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-top: 2px;
+}
+
+.blueprint-heading-dot {
+  color: #0b0f19;
+  display: inline;
+}
+
+.blueprint-support-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-top: 4px;
+}
+
+.blueprint-support-divider {
+  width: 2px;
+  height: 38px;
+  background-color: rgba(255, 255, 255, 0.45);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.blueprint-support-text {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* 3. Essential Document Checklist & Practical FAQs Bottom (Editorial Vault Layout) */
+.blueprint-bottom-container {
+  margin-top: 56px;
+}
+
+.vault-dual-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.vault-panel-card {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 24px;
+  padding: 36px 32px;
+  box-shadow: 
+    0 16px 40px rgba(0, 0, 0, 0.04),
+    0 2px 6px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+.vault-panel-header {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.vault-eyebrow-wrap {
+  margin-bottom: 4px;
+}
+
+.vault-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-orange-primary);
+  display: inline-flex;
+  align-items: center;
+}
+
+.vault-panel-heading {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.96;
+  margin: 0 0 6px 0;
+}
+
+.vault-heading-serif {
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  font-weight: 400;
+  color: var(--color-text-main);
+  letter-spacing: -0.01em;
+}
+
+.vault-heading-impact {
+  font-family: var(--font-impact);
+  font-size: 2.15rem;
+  font-weight: 400;
+  color: var(--color-text-main);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-top: 2px;
+}
+
+.vault-heading-dot {
+  color: var(--color-orange-primary);
+  display: inline;
+}
+
+.vault-panel-desc {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
   color: var(--color-text-muted);
   line-height: 1.5;
+  margin: 0;
 }
 
-.resources-bottom-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-}
-
-.checklist-box, .faqs-box {
-  background: #ffffff;
-  border: 1px solid var(--color-border-light);
-  border-radius: 12px;
-  padding: 28px;
-}
-
-.checklist-intro {
-  font-size: 0.9rem;
-  color: var(--color-text-muted);
-  margin-bottom: 18px;
-}
-
-.checklist-items-list {
+/* Document Checklist List */
+.vault-checklist-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.checklist-row {
+.vault-doc-row {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 8px 12px;
+  gap: 14px;
+  padding: 12px 16px;
   background: var(--color-bg-subtle);
-  border-radius: 6px;
-  border: 1px solid var(--color-border-light);
+  border-radius: 12px;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.checklist-status-icon {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: var(--color-success-bg);
-  color: var(--color-success);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.vault-doc-row:hover {
+  background: #ffffff;
+  border-color: rgba(241, 90, 36, 0.35);
+  box-shadow: 0 6px 20px rgba(241, 90, 36, 0.08);
+  transform: translateX(3px);
+}
+
+.vault-doc-num {
+  font-family: var(--font-impact);
+  font-size: 1.15rem;
+  color: var(--color-orange-primary);
+  width: 26px;
   flex-shrink: 0;
+  line-height: 1;
 }
 
-.checklist-item-info {
+.vault-doc-main {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
-.checklist-name {
-  font-size: 0.85rem;
-  font-weight: 600;
+.vault-doc-name {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 700;
   color: var(--color-text-main);
 }
 
-.checklist-tags {
+.vault-doc-badges {
   display: flex;
   align-items: center;
   gap: 6px;
 }
 
-.checklist-category {
-  font-size: 0.7rem;
-  font-weight: 600;
+.vault-cat-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   background: #ffffff;
   border: 1px solid var(--color-border-light);
-  padding: 2px 6px;
-  border-radius: 4px;
+  padding: 3px 8px;
+  border-radius: 6px;
   color: var(--color-text-subtle);
 }
 
-.mandatory-tag {
-  font-size: 0.7rem;
-  font-weight: 700;
-  background: #fee2e2;
-  color: #b91c1c;
-  padding: 2px 6px;
-  border-radius: 4px;
+.vault-mandatory-tag {
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: #0b0f19;
+  color: #ffffff;
+  padding: 3px 8px;
+  border-radius: 6px;
 }
 
-.faq-accordion-list {
+.vault-optional-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: rgba(241, 90, 36, 0.12);
+  color: #ea580c;
+  border: 1px solid rgba(241, 90, 36, 0.25);
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+/* FAQ Accordion List */
+.vault-faq-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
-.faq-accordion-item {
-  border: 1px solid var(--color-border-light);
-  border-radius: 6px;
+.vault-faq-item {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 14px;
   overflow: hidden;
-  transition: border-color 0.15s ease;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.faq-accordion-item.open {
-  border-color: var(--color-orange-border);
+.vault-faq-item.is-open {
+  border-color: rgba(241, 90, 36, 0.4);
+  box-shadow: 0 8px 24px rgba(241, 90, 36, 0.08);
 }
 
-.faq-question-btn {
+.vault-faq-question-btn {
   width: 100%;
-  padding: 14px 16px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.vault-faq-q-num {
+  font-family: var(--font-impact);
+  font-size: 1.15rem;
+  color: var(--color-orange-primary);
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.vault-faq-q-text {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  line-height: 1.4;
+  flex: 1;
+}
+
+.vault-faq-toggle-pill {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border-light);
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-orange-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  line-height: 1;
+}
+
+.vault-faq-item.is-open .vault-faq-toggle-pill {
+  background: var(--color-orange-primary);
+  color: #ffffff;
+  border-color: var(--color-orange-primary);
+}
+
+.vault-faq-answer-pane {
+  padding: 0 18px 18px 18px;
+  display: flex;
+  gap: 14px;
+  align-items: stretch;
+}
+
+.vault-faq-accent-line {
+  width: 3.5px;
+  background: var(--color-orange-primary);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.vault-faq-answer-text {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  line-height: 1.62;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* Help Footer */
+.vault-faq-help-footer {
+  margin-top: 18px;
+  padding: 14px 18px;
+  background: #fff8f5;
+  border: 1px solid rgba(241, 90, 36, 0.2);
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  text-align: left;
-  background: #ffffff;
+  flex-wrap: wrap;
 }
 
-.faq-q-text {
+.vault-help-text {
   font-family: var(--font-body);
-  font-size: 0.92rem;
+  font-size: 0.86rem;
   font-weight: 600;
-  color: var(--color-text-main);
+  color: #1e293b;
 }
 
-.faq-icon {
-  color: var(--color-orange-primary);
-  flex-shrink: 0;
+.vault-help-btn {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: var(--color-orange-primary);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.vault-help-btn:hover {
+  background: var(--color-orange-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(241, 90, 36, 0.3);
 }
 
 .faq-answer-pane {
@@ -2736,6 +3097,21 @@
   .founder-portrait-frame {
     min-height: 400px;
   }
+  .blueprint-split-layout {
+    grid-template-columns: 1fr 340px;
+    gap: 24px;
+    padding: 0;
+  }
+  .blueprint-right-text-col {
+    padding-right: 24px;
+    padding-left: 8px;
+  }
+  .blueprint-heading-serif {
+    font-size: 2.15rem;
+  }
+  .blueprint-heading-impact {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 860px) {
@@ -2880,6 +3256,53 @@
     justify-content: center;
   }
 
+  .blueprint-banner-wrapper {
+    padding: 0;
+  }
+
+  .blueprint-orange-banner {
+    border-radius: 0;
+    padding: 36px 0 28px;
+  }
+
+  .blueprint-split-layout {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 24px;
+    padding: 0 16px;
+  }
+
+  .blueprint-right-text-col {
+    padding: 0;
+    width: 100%;
+  }
+
+  .blueprint-heading-serif {
+    font-size: 2.15rem;
+  }
+
+  .blueprint-heading-impact {
+    font-size: 2.45rem;
+  }
+
+  .blueprint-support-divider {
+    display: none;
+  }
+
+  .blueprint-step-card {
+    width: 290px;
+    min-width: 290px;
+    padding: 18px 18px 16px;
+  }
+
+  .blueprint-step-title {
+    font-size: 1.2rem;
+  }
+
+  .blueprint-bottom-container {
+    margin-top: 36px;
+  }
+
   .resources-bottom-grid,
   .contact-layout-grid {
     grid-template-columns: 1fr;
@@ -2994,3 +3417,511 @@
     gap: 20px;
   }
 }
+
+/* ==========================================================================
+   Tender Blueprint & Document Checklist / FAQ Section
+   ========================================================================== */
+
+.resources-section {
+  width: 100%;
+  background: var(--color-bg-page);
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 96px;
+}
+
+/* 1. Full-Bleed 6-Stage Tender Blueprint Orange Banner */
+.blueprint-banner-wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  background: var(--color-orange-primary, #f15a24);
+  position: relative;
+  overflow: hidden;
+}
+
+.blueprint-orange-banner {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 60px 0;
+  background: transparent;
+}
+
+.blueprint-split-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  width: 100%;
+}
+
+/* Left Column: Moving Marquee */
+.blueprint-left-marquee-col {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  position: relative;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.blueprint-marquee-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.blueprint-marquee-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: blueprintMarqueeScroll 28s linear infinite;
+}
+
+.blueprint-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes blueprintMarqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Luxe Porcelain Step Card */
+.blueprint-step-card {
+  width: 290px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px 22px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.blueprint-step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.16);
+}
+
+.blueprint-watermark-num {
+  position: absolute;
+  top: -12px;
+  right: 12px;
+  font-family: var(--font-impact);
+  font-size: 5rem;
+  line-height: 1;
+  color: rgba(234, 88, 12, 0.08);
+  user-select: none;
+  pointer-events: none;
+}
+
+.blueprint-step-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.blueprint-step-dash {
+  width: 16px;
+  height: 2.5px;
+  background: var(--color-orange-primary);
+  border-radius: 2px;
+}
+
+.blueprint-step-tag {
+  font-family: var(--font-impact);
+  font-size: 0.85rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--color-orange-primary);
+}
+
+.blueprint-step-title {
+  font-family: var(--font-serif);
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.35;
+  margin-bottom: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.blueprint-step-desc {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: #64748b;
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+}
+
+/* Right Column: Editorial Header */
+.blueprint-right-text-col {
+  width: clamp(340px, 32vw, 460px);
+  flex-shrink: 0;
+  color: #ffffff;
+  padding-right: clamp(24px, 5vw, 64px);
+}
+
+.blueprint-eyebrow-wrap {
+  margin-bottom: 12px;
+}
+
+.blueprint-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-impact);
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #fed7aa;
+}
+
+.blueprint-heading {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.95;
+  margin-bottom: 20px;
+}
+
+.blueprint-heading-serif {
+  font-family: var(--font-serif);
+  font-size: 2.75rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.blueprint-heading-impact {
+  font-family: var(--font-impact);
+  font-size: 3.4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+.blueprint-heading-dot {
+  color: #1e293b;
+}
+
+.blueprint-support-block {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.blueprint-support-divider {
+  width: 3px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.blueprint-support-text {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.55;
+}
+
+/* 2. Bottom Container: Single-Column FAQ Section */
+.faq-section-container {
+  padding-top: 80px;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.faq-header-center {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faq-eyebrow-wrap {
+  margin-bottom: 10px;
+}
+
+.faq-eyebrow {
+  font-family: var(--font-impact);
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--color-orange-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.faq-main-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 0.92;
+  margin-bottom: 16px;
+}
+
+.faq-heading-serif {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--color-text-main);
+  display: block;
+}
+
+.faq-heading-impact {
+  font-family: var(--font-impact);
+  font-size: 3.85rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-text-main);
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.faq-heading-dot {
+  color: var(--color-orange-primary);
+  font-family: var(--font-impact);
+  display: inline;
+}
+
+.faq-subtitle-desc {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* 1-Column FAQ Accordion List */
+.faq-single-column-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.faq-accordion-item {
+  background: #ffffff;
+  border: 1px solid var(--color-border-light);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-accordion-item.is-open {
+  border-color: rgba(241, 90, 36, 0.35);
+  box-shadow: 0 10px 24px rgba(241, 90, 36, 0.08);
+}
+
+.faq-question-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 22px 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  transition: background 0.15s ease;
+}
+
+.faq-accordion-item:hover .faq-question-btn {
+  background: rgba(241, 90, 36, 0.02);
+}
+
+.faq-item-num {
+  font-family: var(--font-impact);
+  font-size: 1.15rem;
+  color: var(--color-orange-primary);
+  flex-shrink: 0;
+}
+
+.faq-question-text {
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.45;
+  flex: 1;
+}
+
+.faq-toggle-pill {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fafaf9;
+  border: 1px solid var(--color-border-light);
+  color: var(--color-orange-primary);
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  line-height: 1;
+  transition: all 0.2s ease;
+}
+
+.faq-accordion-item.is-open .faq-toggle-pill {
+  background: var(--color-orange-primary);
+  color: #ffffff;
+  border-color: var(--color-orange-primary);
+}
+
+.faq-answer-pane {
+  padding: 0 24px 24px 24px;
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+  animation: faqSlideDown 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes faqSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.faq-accent-line {
+  width: 3px;
+  background: linear-gradient(to bottom, var(--color-orange-primary), #fb923c);
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.faq-answer-text {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  color: #475569;
+  line-height: 1.65;
+}
+
+/* FAQ Support Prompt Footer */
+.faq-support-footer {
+  margin-top: 36px;
+  padding: 22px 28px;
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+  border: 1px solid #fed7aa;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.faq-support-left {
+  flex: 1;
+  min-width: 260px;
+}
+
+.faq-support-prompt {
+  font-family: var(--font-body);
+  font-size: 0.94rem;
+  font-weight: 600;
+  color: #9a3412;
+}
+
+.faq-support-btn {
+  background: var(--color-orange-primary);
+  color: #ffffff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-family: var(--font-impact);
+  font-size: 0.85rem;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+  box-shadow: 0 4px 12px rgba(241, 90, 36, 0.25);
+}
+
+.faq-support-btn:hover {
+  background: var(--color-orange-hover);
+  transform: translateY(-1px);
+}
+
+/* Responsive Rules */
+@media (max-width: 992px) {
+  .blueprint-orange-banner {
+    padding: 48px 0;
+  }
+
+  .blueprint-split-layout {
+    flex-direction: column-reverse;
+    gap: 36px;
+  }
+
+  .blueprint-right-text-col {
+    width: 100%;
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .blueprint-heading-serif {
+    font-size: 2.2rem;
+  }
+
+  .blueprint-heading-impact {
+    font-size: 2.6rem;
+  }
+
+  .faq-heading-serif {
+    font-size: 2.75rem;
+  }
+
+  .faq-heading-impact {
+    font-size: 3.1rem;
+  }
+
+  .faq-question-btn {
+    padding: 16px 18px;
+  }
+
+  .faq-answer-pane {
+    padding: 0 18px 20px 18px;
+  }
+
+  .faq-support-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .faq-support-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
