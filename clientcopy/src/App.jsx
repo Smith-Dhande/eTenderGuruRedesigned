@@ -44,16 +44,16 @@ function MainApp() {
       {/* 2. Founder Video Device Section (Realistic Physical Tablet Left / Editorial Text Right) */}
       <FounderVideoSection />
 
-      {/* 3. Structured Courses Section */}
-      <CoursesSection onSelectCourseForEnquiry={handleSelectCourseForEnquiry} />
-
       {/* 3. YouTube Educational Video Lessons */}
       <YouTubeSection />
 
       {/* 4. Founder & Practical Expertise Section */}
       <FounderSection />
 
-      {/* 5. Educational Resources (Roadmap, Checklist, FAQs) */}
+      {/* 5. Structured Courses Section */}
+      <CoursesSection onSelectCourseForEnquiry={handleSelectCourseForEnquiry} />
+
+      {/* 6. Educational Resources (Roadmap, Checklist, FAQs - Tender Blueprint) */}
       <ResourcesSection />
 
       {/* 6. Contact & Direct Enquiry Form */}

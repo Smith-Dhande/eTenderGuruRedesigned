@@ -33,7 +33,7 @@ export const translations = {
 
     // Course Section (Reference-Based Editorial Catalogue)
     courses: {
-      eyebrow: "02 — LEARN",
+      eyebrow: "04 — LEARN",
       titleSerif: "Our",
       titleImpact: "COURSES.",
       support: "Step-by-step, practical courses to help you understand, find and win government tenders.",
@@ -57,7 +57,7 @@ export const translations = {
 
     // YouTube Section
     youtube: {
-      eyebrow: "03 — FREE KNOWLEDGE HUB",
+      eyebrow: "02 — FREE KNOWLEDGE HUB",
       badge: "FREE KNOWLEDGE HUB",
       titleSerif: "Free Knowledge",
       titleImpact: "VIDEO HUB.",
@@ -80,7 +80,7 @@ export const translations = {
 
     // Founder Section
     founder: {
-      eyebrow: "04 — LEAD INSTRUCTOR & EXPERT",
+      eyebrow: "03 — LEAD INSTRUCTOR & EXPERT",
       badge: "LEAD INSTRUCTOR & EXPERT",
       titleSerif: "Real Ground Experience",
       titleImpact: "ZERO FLUFF.",
@@ -305,7 +305,7 @@ export const translations = {
 
     // Course Section (Reference-Based Editorial Catalogue)
     courses: {
-      eyebrow: "०२ — शिका",
+      eyebrow: "०४ — शिका",
       titleSerif: "आमचे",
       titleImpact: "अभ्यासक्रम.",
       support: "शासकीय निविदा समजून घेण्यासाठी, शोधण्यासाठी व जिंकण्यासाठी टप्प्याटप्प्याने मार्गदर्शन.",
@@ -333,7 +333,7 @@ export const translations = {
 
     // YouTube Section
     youtube: {
-      eyebrow: "०३ — मोफत ज्ञान भांडार",
+      eyebrow: "०२ — मोफत ज्ञान भांडार",
       badge: "मोफत ज्ञान भांडार",
       titleSerif: "मोफत ज्ञान भांडार",
       titleImpact: "व्हिडिओ प्रात्यक्षिके.",
@@ -356,7 +356,7 @@ export const translations = {
 
     // Founder Section
     founder: {
-      eyebrow: "०४ — मुख्य मार्गदर्शक व तज्ज्ञ",
+      eyebrow: "०३ — मुख्य मार्गदर्शक व तज्ज्ञ",
       badge: "मुख्य प्रशिक्षक व मार्गदर्शक",
       titleSerif: "प्रत्यक्ष जमिनीवरील अनुभव",
       titleImpact: "कोणतीही दिशाभूल नाही.",
