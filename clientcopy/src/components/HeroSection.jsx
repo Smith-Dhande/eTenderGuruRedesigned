@@ -33,7 +33,7 @@ export const HeroSection = ({ onExploreCourses }) => {
             <div className="hero-eyebrow-wrap">
               <span className="hero-eyebrow hero-eyebrow-desktop">{t.label}</span>
               <span className="hero-eyebrow hero-eyebrow-mobile">
-                {language === 'mr' ? 'ई-टेंडर गुरू' : 'eTender Guru'}
+                {language === 'mr' ? 'ई-टेंडर गुरु' : 'eTender Guru'}
               </span>
             </div>
 
