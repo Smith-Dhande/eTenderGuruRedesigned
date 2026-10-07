@@ -276,212 +276,212 @@ export const translations = {
     langSwitcher: {
       en: "EN",
       mr: "मराठी",
-      switchLabel: "भाषा बदला"
+      switchLabel: "भाषा"
     },
 
-    // Hero Section (Strictly following herosection-design.md in Marathi)
+    // Hero Section (Natural eTender Guru Style)
     hero: {
-      label: "शासकीय निविदा शिक्षण सुलभ आणि सोपे",
-      headlineBold: "समजून घ्या",
-      headlineLight: "निविदा.",
-      supportingText: "प्रत्यक्ष अनुभवातून मिळालेले व्यावसायिक शासकीय निविदांचे परिपूर्ण शिक्षण.",
-      cta: "कोर्सेस पहा",
-      annotation: "आजचे ज्ञान • उद्याच्या संधी",
+      label: "GOVERNMENT TENDERS आता सोप्या भाषेत",
+      headlineBold: "टेंडर",
+      headlineLight: "शिका.",
+      supportingText: "प्रत्यक्ष ग्राऊंड अनुभवातून Government Tender चे सोपे आणि प्रॅक्टिकल शिक्षण.",
+      cta: "COURSES पहा",
+      annotation: "आज शिका • उद्या स्वतःचा Business सुरू करा",
       stepIndicator: "०१ / ०३",
-      altFounder: "ई-टेंडर गुरु संस्थापक - शासकीय निविदा प्रशिक्षक व मार्गदर्शक",
-      altReference: "ई-टेंडर गुरु संदर्भ"
+      altFounder: "eTender Guru संस्थापक - Tender Trainer & Expert",
+      altReference: "eTender Guru Hero Reference"
     },
 
     // Founder Video Device Section
     founderIntro: {
-      eyebrow: "०१ — मार्गदर्शक व्यक्ती",
-      headlineSerif: "मार्गदर्शक व्यक्ती",
-      headlineImpact: "ज्ञानामागील खरा अनुभव.",
-      supportingText: "शासकीय निविदा शिकण्यापूर्वी, प्रत्यक्ष अनुभवातून मार्गदर्शन करणाऱ्या संस्थापकांचे विचार ऐका.",
-      watchCta: "परिचय व्हिडिओ पहा",
-      playLabel: "व्हिडिओ सुरू करा",
-      pauseLabel: "व्हिडिओ थांबवा"
-    },
-
-    // Course Section (Reference-Based Editorial Catalogue)
-    courses: {
-      eyebrow: "०४ — शिका",
-      titleSerif: "आमचे",
-      titleImpact: "अभ्यासक्रम.",
-      support: "शासकीय निविदा समजून घेण्यासाठी, शोधण्यासाठी व जिंकण्यासाठी टप्प्याटप्प्याने मार्गदर्शन.",
-      benefits: {
-        structured: "संरचित शिक्षण",
-        examples: "थेट उदाहरणे",
-        levels: "नवशिक्या ते प्रगत"
-      },
-      viewDetails: "अभ्यासक्रम पहा",
-      explore: "एक्सप्लोर करा",
-      enquireNow: "कोर्सची चौकशी करा",
-      durationLabel: "कालावधी",
-      levelLabel: "स्तर",
-      modeLabel: "प्रकार",
-      targetAudienceLabel: "हा कोर्स कोणासाठी आहे?",
-      modulesLabel: "कोर्सचे घटक व अभ्यासक्रम",
-      keyTakeawaysLabel: "तुम्ही काय शिकाल?",
-      prerequisitesLabel: "पूर्वअटी",
-      modalClose: "बंद करा",
-      allCoursesTab: "सर्व कोर्सेस",
-      beginnerBadge: "नवशिक्यांसाठी सोपे",
-      advancedBadge: "व्यावहारिक मास्टरक्लास",
-      portalBadge: "थेट पोर्टल प्रशिक्षण"
+      eyebrow: "०१ — संस्थापकांचा परिचय",
+      headlineSerif: "ज्ञानामागील",
+      headlineImpact: "प्रत्यक्ष ग्राऊंड अनुभव.",
+      supportingText: "टेंडर प्रक्रिया शिकण्यापूर्वी, प्रत्यक्ष कामाचा अनुभव असणाऱ्या संस्थापकांचे मार्गदर्शन ऐका.",
+      watchCta: "व्हिडिओ पहा",
+      playLabel: "Video सुरू करा",
+      pauseLabel: "Video थांबवा"
     },
 
     // YouTube Section
     youtube: {
-      eyebrow: "०२ — मोफत ज्ञान भांडार",
-      badge: "मोफत ज्ञान भांडार",
-      titleSerif: "मोफत ज्ञान भांडार",
-      titleImpact: "व्हिडिओ प्रात्यक्षिके.",
-      title: "शासकीय निविदांचे शिक्षण मोफत मिळवा",
-      subtitle: "आमच्या यूट्यूब चॅनेलवर थेट पोर्टल प्रात्यक्षिके, निविदा भरताना होणाऱ्या चुका आणि शासकीय खरेदीचे नवे नियम मोफत शिका.",
-      support: "आमच्या यूट्यूब चॅनेलवर थेट पोर्टल प्रात्यक्षिके, निविदा भरताना होणाऱ्या चुका आणि शासकीय खरेदीचे नवे नियम मोफत शिका.",
-      watchVideo: "व्हिडिओ पहा",
-      channelCta: "यूट्यूब चॅनेलला भेट द्या",
-      subscribersText: "मोफत व्यावहारिक व्हिडिओ धडे",
+      eyebrow: "०२ — मोफत YOUTUBE HUB",
+      badge: "FREE VIDEO HUB",
+      titleSerif: "YouTube वरून",
+      titleImpact: "मोफत शिका.",
+      title: "Government Tender मोफत शिका",
+      subtitle: "आमच्या YouTube Channel वर Live Portal प्रात्यक्षिके, टेंडर भरताना होणाऱ्या चुका आणि नवीन नियम सोप्या मराठीत मोफत शिका.",
+      support: "आमच्या YouTube Channel वर Live Portal प्रात्यक्षिके, टेंडर भरताना होणाऱ्या चुका आणि नवीन नियम सोप्या मराठीत मोफत शिका.",
+      watchVideo: "Video पहा",
+      channelCta: "YouTube Channel ला भेट द्या",
+      subscribersText: "मोफत प्रॅक्टिकल Video धडे",
       categories: {
-        all: "सर्व व्हिडिओ",
-        tutorials: "पोर्टल प्रात्यक्षिके",
+        all: "सर्व Videos",
+        tutorials: "Portal Tutorials",
         mistakes: "टाळावयाच्या चुका",
-        gem: "GeM व महाटेंडर",
-        basics: "मूलभूत मार्गदर्शक"
+        gem: "GeM व Mahatender",
+        basics: "Beginner Guides"
       },
       closeModal: "प्लेअर बंद करा",
-      openInYoutube: "यूट्यूबवर उघडा"
+      openInYoutube: "YouTube वर पहा"
     },
 
     // Founder Section
     founder: {
-      eyebrow: "०३ — मुख्य मार्गदर्शक व तज्ज्ञ",
-      badge: "मुख्य प्रशिक्षक व मार्गदर्शक",
-      titleSerif: "प्रत्यक्ष जमिनीवरील अनुभव",
-      titleImpact: "कोणतीही दिशाभूल नाही.",
-      title: "प्रत्यक्ष जमिनीवरील अनुभव. कोणतीही दिशाभूल नाही.",
-      subtitle: "जटिल शासकीय नियम आणि महत्त्वाकांक्षी कंत्राटदार यांच्यातील अंतर साध्या आणि कृतीयोग्य मार्गदर्शनाने दूर करत आहोत.",
-      support: "जटिल शासकीय नियम आणि महत्त्वाकांक्षी कंत्राटदार यांच्यातील अंतर साध्या आणि कृतीयोग्य मार्गदर्शनाने दूर करत आहोत.",
-      roleTitle: "संस्थापक व मुख्य निविदा तज्ज्ञ",
-      experienceTag: "१०+ वर्षांचा प्रत्यक्ष जमिनीवरील अनुभव",
-      verifiedTag: "शासकीय ई-निविदा पोर्टल तज्ज्ञ",
-      aboutHeading: "ई-टेंडर गुरुमागील खरा अनुभव",
-      bio1: "शासकीय ई-निविदा पोर्टल, कागदपत्रांची तयारी, पात्रता निकष आणि प्रत्यक्ष निविदा प्रक्रियेतील प्रदीर्घ व्यावहारिक अनुभवानंतर, ई-टेंडर गुरुची स्थापना शासकीय निविदा प्रक्रिया सुलभ करण्यासाठी झाली.",
-      bio2: "महाराष्ट्र आणि देशभरातील एमएसएमई, सिव्हिल आणि इलेक्ट्रिकल कंत्राटदार, नवउद्योजक व पुरवठादारांना कोणत्याही मध्यस्थाशिवाय स्वतःच्या बळावर निविदा भरण्यास सक्षम करणे हे आमचे मुख्य ध्येय आहे.",
-      quote: "शासकीय निविदा ही लॉटरी नसून नियमांवर आधारलेली अचूक प्रणाली आहे. नियम समजले की निविदा जिंकणे हे एक अचूक शास्त्र बनते.",
+      eyebrow: "०३ — TRAINER & EXPERT",
+      badge: "FOUNDER & EXPERT",
+      titleSerif: "१०+ वर्षांचा प्रत्यक्ष अनुभव",
+      titleImpact: "ZERO FLUFF.",
+      title: "प्रत्यक्ष ग्राऊंड अनुभव. कोणतीही दिशाभूल नाही.",
+      subtitle: "कठीण सरकारी नियम बाजूला ठेवून कंत्राटदार व नवीन व्यावसायिकांना सोप्या भाषेत टेंडर शिकवणे हेच आमचे उद्दिष्ट आहे.",
+      support: "कठीण सरकारी नियम बाजूला ठेवून कंत्राटदार व नवीन व्यावसायिकांना सोप्या भाषेत टेंडर शिकवणे हेच आमचे उद्दिष्ट आहे.",
+      roleTitle: "Founder & Lead Tender Consultant",
+      experienceTag: "१०+ वर्षांचा प्रॅक्टिकल अनुभव",
+      verifiedTag: "E-Tendering Practitioner",
+      aboutHeading: "eTender Guru मागील प्रत्यक्ष कामाचा अनुभव",
+      bio1: "विविध सरकारी पोर्टल्स, टेंडर डॉक्युमेंट्स, पात्रता अटी आणि स्वतः प्रत्यक्ष टेंडर भरण्याच्या १०+ वर्षांच्या अनुभवातून eTender Guru ची सुरुवात झाली.",
+      bio2: "महाराष्ट्रभरातील MSME व्यावसायिक, Civil & Electrical Contractors, Suppliers आणि नवीन तरुणांना कोणत्याही एजंट किंवा मध्यस्थाशिवाय स्वतःच्या हिमतीवर टेंडर भरता यावे हेच आमचे मुख्य ध्येय आहे.",
+      quote: "टेंडर म्हणजे कोणतीही लॉटरी नाही; ही नियमांवर चालणारी अचूक पद्धत आहे. नियम समजले की टेंडर जिंकणे सोपे होते.",
       pillars: [
         {
-          title: "१००% व्यावहारिक शिक्षण",
-          desc: "केवळ पुस्तकी ज्ञान नाही, तर प्रत्यक्ष पोर्टल, थेट NIT दस्तऐवज वाचन आणि कागदपत्रांची अचूक मांडणी."
+          title: "१००% प्रॅक्टिकल ट्रेनिंग",
+          desc: "केवळ पुस्तकी ज्ञान नाही, तर प्रत्यक्ष Live Portals, NIT वाचन आणि अचूक Documents तयार करणे."
         },
         {
-          title: "सर्व प्रमुख पोर्टल्सचे सखोल ज्ञान",
-          desc: "महाटेंडर (Mahatender), GeM पोर्टल, CPPP आणि विविध शासकीय विभागांच्या ई-निविदा प्रणालींवर प्रभुत्व."
+          title: "सर्व प्रमुख Portals ची माहिती",
+          desc: "Mahatender, GeM Portal, CPPP आणि इतर सर्व सरकारी पोर्टल्सवर काम करण्याचे संपूर्ण ज्ञान."
         },
         {
-          title: "तांत्रिक त्रुटी व रिजेक्शन प्रतिबंध",
-          desc: "तांत्रिक बोली (Technical Bid) का बाद होते याची सविस्तर कारणे आणि ती टाळण्याचे अचूक उपाय."
+          title: "Rejection का होते व उपाय",
+          desc: "Technical Bid रिजेक्ट का होते याची खरी कारणे आणि चुका टाळण्याची अचूक पद्धत."
         },
         {
-          title: "स्वावलंबी कंत्राटदार घडवणे",
-          desc: "मध्यस्थांवर विसंबून न राहता स्वतः निविदा शोधणे, तपासणे आणि अचूकपणे ऑनलाइन सबमिट करण्याची क्षमता."
+          title: "स्वतः टेंडर भरायला सक्षम व्हा",
+          desc: "कोणावरही अवलंबून न राहता स्वतः टेंडर शोधणे, अभ्यास करणे आणि Online Submit करण्याची पूर्ण क्षमता."
         }
       ],
-      enquireCta: "प्रशिक्षकांशी संपर्क साधा",
-      coursesCta: "कोर्सेस पहा"
+      enquireCta: "मार्गदर्शन मिळवा",
+      coursesCta: "सर्व Courses पहा"
+    },
+
+    // Course Section (Reference-Based Editorial Catalogue)
+    courses: {
+      eyebrow: "०४ — आमचे कोर्सेस",
+      titleSerif: "आमचे प्रॅक्टिकल",
+      titleImpact: "TENDER COURSES.",
+      support: "Government Tender शोधणे, समजून घेणे आणि स्वतः भरून जिंकण्यासाठी Step-by-Step प्रॅक्टिकल मार्गदर्शन.",
+      benefits: {
+        structured: "संरचित शिक्षण",
+        examples: "Live उदाहरणे",
+        levels: "Beginner ते Advanced"
+      },
+      viewDetails: "Syllabus पहा",
+      explore: "माहिती पहा",
+      enquireNow: "Course ची चौकशी करा",
+      durationLabel: "कालावधी",
+      levelLabel: "Level",
+      modeLabel: "प्रकार",
+      targetAudienceLabel: "हा Course कोणासाठी आहे?",
+      modulesLabel: "Course Modules & Syllabus",
+      keyTakeawaysLabel: "या Course मधून काय शिकाल?",
+      prerequisitesLabel: "काय आवश्यक आहे?",
+      modalClose: "बंद करा",
+      allCoursesTab: "सर्व Courses",
+      beginnerBadge: "Beginner Friendly",
+      advancedBadge: "Practical Masterclass",
+      portalBadge: "Live Portal Training"
     },
 
     // Resources & Educational Hub Section (Tender Blueprint)
     resources: {
-      eyebrow: "०५ — निविदा आराखडा",
-      badge: "निविदा आराखडा",
-      titleSerif: "ई-निविदा प्रक्रिया व",
-      titleImpact: "टप्प्याटप्प्याने आराखडा.",
-      title: "ई-निविदा प्रक्रिया आणि आवश्यक कागदपत्रांची यादी",
-      subtitle: "शासकीय निविदा प्रक्रियेचे प्रमुख टप्पे आणि पहिली निविदा भरण्यापूर्वी लागणारी अत्यावश्यक कागदपत्रे समजून घ्या.",
-      support: "डिजिटल सेटअपपासून ते अंतिम निविदा जिंकण्यापर्यंतचे ६ महत्त्वपूर्ण टप्पे समजून घ्या.",
-      roadmapTitle: "ई-निविदा प्रक्रियेचे ६ सोपे टप्पे",
-      stepPrefix: "टप्पा",
+      eyebrow: "०५ — TENDER BLUEPRINT",
+      badge: "TENDER BLUEPRINT",
+      titleSerif: "टेंडरचे ६ महत्त्वाचे टप्पे व",
+      titleImpact: "STEP-BY-STEP ROADMAP.",
+      title: "टेंडर प्रक्रिया आणि आवश्यक Documents",
+      subtitle: "पहिले टेंडर भरण्यापूर्वी टेंडरचे मुख्य टप्पे आणि लागणारी सर्व महत्त्वाची कागदपत्रे समजून घ्या.",
+      support: "Digital Setup पासून ते अंतिम टेंडर भरून जिंकण्यापर्यंतचे ६ महत्त्वाचे टप्पे समजून घ्या.",
+      roadmapTitle: "टेंडर प्रक्रियेचे ६ सोपे टप्पे",
+      stepPrefix: "STEP",
       roadmap: [
         {
           step: "०१",
-          title: "डिजिटल सेटअप व क्लास ३ DSC",
-          desc: "क्लास ३ डिजिटल सिग्नेचर (Signing + Encryption) घेणे आणि संगणक/ब्राउझरची योग्य सेटिंग करणे."
+          title: "Digital Setup व Class 3 DSC",
+          desc: "Class 3 Digital Signature (Signing + Encryption) घेणे आणि Computer / Browser ची योग्य Setting करणे."
         },
         {
           step: "०२",
-          title: "नोंदणी व पोर्टल प्रोफाइल",
-          desc: "महाटेंडर, GeM, CPPP व संबंधित विभागांवर पॅन, जीएसटी आणि व्यावसायिक माहितीसह व्हेंडर नोंदणी करणे."
+          title: "Vendor Registration व Profile",
+          desc: "Mahatender, GeM, CPPP वर PAN, GST आणि व्यावसायिक माहितीसह Vendor Registration करणे."
         },
         {
           step: "०३",
-          title: "NIT अभ्यास व पात्रता तपासणी",
-          desc: "निविदा नोटीस (NIT), कामाचे स्वरूप, BOQ अंदाजपत्रक, टर्नओव्हर, सॉल्व्हन्सी व EMD च्या अटी काळजीपूर्वक तपासणे."
+          title: "NIT वाचन व पात्रता तपासणी",
+          desc: "टेंडर नोटीस (NIT), Scope of Work, BOQ, Turnover, Solvency आणि EMD च्या अटी व्यवस्थित तपासणे."
         },
         {
           step: "०४",
-          title: "तांत्रिक कागदपत्रे (पाकीट अ व ब)",
-          desc: "ऑडिटेड बॅलन्स शीट, कामाचा अनुभव दाखले, प्रतिज्ञापत्रे, अधिकृत घोषणापत्रे आणि तांत्रिक कागदपत्रे तयार करणे."
+          title: "Technical Documents (Packet A & B)",
+          desc: "Balance Sheet, Work Done Certificate, Affidavits (शपथपत्रे) आणि आवश्यक तांत्रिक Documents तयार करणे."
         },
         {
           step: "०५",
-          title: "आर्थिक बोली (पाकीट क / BOQ)",
-          desc: "प्रत्यक्ष खर्च, कर, नफा यांचा हिशोब करून एन्क्रिप्टेड एक्सेल BOQ मध्ये अचूक दर भरणे."
+          title: "Financial Bid (Packet C / BOQ)",
+          desc: "कामाचा खर्च व नफ्याचे योग्य गणित करून Encrypted Excel BOQ मध्ये अचूक Rates भरणे."
         },
         {
           step: "०६",
-          title: "ऑनलाइन सबमिशन व पोचपावती",
-          desc: "प्रत्येक दस्तऐवजावर डिजिटल स्वाक्षरी करून अंतिम मुदतीपूर्वी अपलोड करणे व पावती सुरक्षित ठेवणे."
+          title: "Online Submission व Receipt",
+          desc: "प्रत्येक Document वर Digital Sign करून वेळेत Upload करणे आणि Acknowledgement Token सांभाळून ठेवणे."
         }
       ],
-      checklistEyebrow: "अत्यावश्यक कागदपत्रे",
-      checklistTitleSerif: "निविदाकारांसाठी आवश्यक",
-      checklistTitleImpact: "कागदपत्रांची यादी.",
-      checklistTitle: "कंत्राटदारांसाठी आवश्यक कागदपत्रांची यादी",
-      checklistDesc: "महाराष्ट्र आणि केंद्रीय ई-निविदा पोर्टलवर तांत्रिक बोलीसाठी आवश्यक असणारी १० मुख्य कागदपत्रे तपासा.",
-      checklistExpandCta: "१० मुख्य कागदपत्रे उघडा आणि तपासा",
-      checklistCollapseCta: "कागदपत्रांची यादी लपवा",
-      readinessScoreLabel: "निविदा पूर्वतयारी स्कोअर",
-      readinessItemsChecked: "कागदपत्रे तयार",
-      filterAll: "सर्व कागदपत्रे (१०)",
-      filterMandatory: "फक्त अनिवार्य (७)",
-      filterExemption: "सवलती / परवाने (३)",
-      resetChecks: "रिसेट करा",
+      checklistEyebrow: "आवश्यक DOCUMENTS",
+      checklistTitleSerif: "टेंडरसाठी लागणारी",
+      checklistTitleImpact: "महत्त्वाची कागदपत्रे.",
+      checklistTitle: "टेंडर साठी आवश्यक Documents ची यादी",
+      checklistDesc: "महाराष्ट्र व केंद्र सरकारच्या टेंडरसाठी Technical Bid मध्ये लागणारे १० महत्त्वाचे Documents तपासून घ्या.",
+      checklistExpandCta: "१० महत्त्वाचे Documents तपासा",
+      checklistCollapseCta: "यादी बंद करा",
+      readinessScoreLabel: "Tender Readiness Score",
+      readinessItemsChecked: "तयार असलेले Documents",
+      filterAll: "सर्व Documents (१०)",
+      filterMandatory: "अनिवार्य (Compulsory - ७)",
+      filterExemption: "सवलती व Licenses (३)",
+      resetChecks: "Clear करा",
       checklistItems: [
-        { name: "क्लास ३ डिजिटल सिग्नेचर (DSC - Signing & Encryption)", mandatory: true, category: "सुरक्षा" },
-        { name: "जीएसटी नोंदणी प्रमाणपत्र व ताजी रिटर्न पावती", mandatory: true, category: "कर प्रणाली" },
-        { name: "संस्था/मालक/संचालकांचे पॅन कार्ड", mandatory: true, category: "ओळख पुरावा" },
-        { name: "मागील ३ वर्षांचे सीए प्रमाणित बॅलन्स शीट व टर्नओव्हर दाखला", mandatory: true, category: "आर्थिक" },
-        { name: "बँक सॉल्व्हन्सी प्रमाणपत्र (अनुसूचित बँकेचे)", mandatory: true, category: "बँकिंग" },
-        { name: "पूर्वी केलेल्या कामांचे अनुभव प्रमाणपत्र (Work Done)", mandatory: true, category: "तांत्रिक" },
-        { name: "वैध कंत्राटदार नोंदणी लायसन्स (PWD/ZP/महापालिका)", mandatory: false, category: "नोंदणी" },
-        { name: "स्टॅम्प पेपरवरील ब्लॅकलिस्ट नसलेबाबत शपथपत्र", mandatory: true, category: "कायदेशीर" },
-        { name: "उद्यम / MSME प्रमाणपत्र (EMD फी सवलतीसाठी)", mandatory: false, category: "सवलत" },
-        { name: "अधिकृतता पत्र किंवा कुलमुखत्यारपत्र (Power of Attorney)", mandatory: true, category: "अधिकार" }
+        { name: "Class 3 Digital Signature (DSC - Signing & Encryption)", mandatory: true, category: "Security" },
+        { name: "GST Registration Certificate आणि Returns पावती", mandatory: true, category: "Tax" },
+        { name: "Proprietor / Company चे PAN Card", mandatory: true, category: "Identity" },
+        { name: "मागील ३ वर्षांचे CA Certified Balance Sheet व Turnover Certificate", mandatory: true, category: "Financial" },
+        { name: "Bank Solvency Certificate (बँक सॉल्व्हन्सी)", mandatory: true, category: "Banking" },
+        { name: "Work Done / कामाचे अनुभव प्रमाणपत्र", mandatory: true, category: "Experience" },
+        { name: "Contractor Registration License (PWD / ZP / महापालिका)", mandatory: false, category: "License" },
+        { name: "Non-Blacklisting व सत्यतेचे Affidavit (Stamp Paper वर)", mandatory: true, category: "Legal" },
+        { name: "Udyam / MSME Certificate (EMD Fee सवलतीसाठी)", mandatory: false, category: "Exemption" },
+        { name: "Power of Attorney / अधिकार पत्र", mandatory: true, category: "Authorization" }
       ],
-      faqEyebrow: "मार्गदर्शन व उत्तरे",
+      faqEyebrow: "FREQUENTLY ASKED QUESTIONS",
       faqTitleSerif: "नेहमी विचारले जाणारे",
-      faqTitleImpact: "महत्त्वाचे प्रश्न (FAQ).",
-      faqTitle: "वारंवार विचारले जाणारे प्रश्न (FAQ)",
-      faqHelpPrompt: "आपल्या निविदेबद्दल काही विशिष्ट शंका किंवा प्रश्न आहेत का?",
-      faqHelpCta: "तज्ज्ञांशी चर्चा करा",
+      faqTitleImpact: "काही महत्त्वाचे प्रश्न.",
+      faqTitle: "नेहमी विचारले जाणारे प्रश्न (FAQs)",
+      faqHelpPrompt: "टेंडरबद्दल तुमच्या मनात काही विशिष्ट प्रश्न किंवा शंका आहे का?",
+      faqHelpCta: "आमच्याशी संपर्क साधा",
       faqs: [
         {
-          q: "नवीन किंवा नवशिक्या व्यावसायिक शासकीय निविदा भरू शकतो का?",
-          a: "होय! एमएसएमई (MSME) नोंदणीधारकांसाठी अनेक निविदांमध्ये अनुभव व टर्नओव्हरच्या अटींमध्ये सूट असते. तसेच GeM पोर्टलवर थेट लहान खरेदीच्या अनेक संधी उपलब्ध असतात."
+          q: "नवीन व्यक्ती किंवा New Business सरकारी टेंडर घेऊ शकतो का?",
+          a: "होय! MSME / Startup नोंदणी असणाऱ्यांना अनेक टेंडरमध्ये अनुभव आणि Turnover मध्ये सवलत मिळते. तसेच GeM Portal वर नवीन लोकांसाठी थेट अनेक संधी उपलब्ध असतात."
         },
         {
-          q: "महाटेंडर (Mahatender), GeM आणि CPPP मध्ये काय फरक आहे?",
-          a: "महाटेंडर हे महाराष्ट्र शासनाच्या सर्व विभागांसाठी (सार्वजनिक बांधकाम, जलसंपदा, जि.प., महापालिका) राज्य पोर्टल आहे. GeM हे केंद्र व राज्य शासनासाठीचे राष्ट्रीय खरेदी पोर्टल आहे. CPPP हे केंद्रीय मंत्रालये व सार्वजनिक उपक्रमांचे ई-पोर्टल आहे."
+          q: "Mahatender, GeM आणि CPPP मध्ये काय फरक आहे?",
+          a: "Mahatender हे महाराष्ट्रातील सर्व सरकारी विभागांचे (PWD, Irrigation, ZP, महापालिका) Portal आहे. GeM हे देशभरातील सर्व सरकारी खरेदीसाठीचे Central Portal आहे, तर CPPP हे केंद्रीय मंत्रालयांचे Portal आहे."
         },
         {
-          q: "तांत्रिक बोली (Technical Bid) बाद होण्याची प्रमुख कारणे काय असतात?",
-          a: "शपथपत्रांवरील स्टॅम्प पेपरचे चुकीचे मूल्य, कागदपत्रांना अनुक्रमणिका (Index) नसणे, कालबाह्य सॉल्व्हन्सी, एक्सपायर झालेले DSC किंवा अस्पष्ट स्कॅन कॉपी ही बाद होण्याची मुख्य कारणे आहेत."
+          q: "Technical Bid रिजेक्ट का होते?",
+          a: "Stamp Paper चे चुकीचे मूल्य, Documents ला Index नसणे, जुनी Solvency, Expire झालेली DSC किंवा वाचता न येणाऱ्या अस्पष्ट स्कॅन फाइल्स ही Bid रिजेक्ट होण्याची मुख्य कारणे आहेत."
         },
         {
-          q: "ई-टेंडर भरण्यासाठी खूप मोठे संगणकीय ज्ञान लागते का?",
-          a: "नाही. मूलभूत संगणक चालवता येत असल्यास पुरेसे आहे. DSC सेटिंग, जावा कॉन्फिगरेशन, कागदपत्रे अपलोड करणे आणि BOQ भरणे या गोष्टी आमच्या प्रॅक्टिकल कोर्समध्ये अत्यंत सोप्या भाषेत शिकवल्या जातात."
+          q: "टेंडर भरण्यासाठी Computer चे मोठे Knowledge लागते का?",
+          a: "नाही! Basic Computer चालवता आले तरी पुरेसे आहे. DSC Setting, Java Configuration, Documents Upload आणि BOQ भरणे या गोष्टी आमच्या Course मध्ये अगदी सोप्या मराठीत शिकवल्या जातात."
         }
       ]
     },
@@ -489,38 +489,38 @@ export const translations = {
     // Contact & Enquiry Section
     contact: {
       eyebrow: "०६ — संपर्क साधा",
-      badge: "संपर्क साधा",
-      titleSerif: "तुमचा ई-निविदा प्रवास",
-      titleImpact: "आजच सुरू करा.",
-      title: "शासकीय निविदा शिकण्याचा प्रवास सुरू करा",
-      subtitle: "कोर्सेसबद्दल माहिती हवी असल्यास, पोर्टल नोंदणीबद्दल शंका असल्यास किंवा विशेष मार्गदर्शनासाठी थेट चौकशी फॉर्म भरा.",
-      support: "कोर्सेसबद्दल काही प्रश्न आहेत किंवा पोर्टल नोंदणीबाबत वैयक्तिक मार्गदर्शन हवे आहे का? थेट आमच्या तज्ज्ञ टीमशी संपर्क साधा.",
+      badge: "GET IN TOUCH",
+      titleSerif: "Government Tender",
+      titleImpact: "आजच शिकायला सुरुवात करा.",
+      title: "Government Tender चा प्रवास आजच सुरू करा",
+      subtitle: "Courses बद्दल माहिती हवी असल्यास, Portal Registration बद्दल शंका असल्यास किंवा थेट मार्गदर्शनासाठी Form भरा.",
+      support: "Courses बद्दल काही प्रश्न असतील किंवा Portal Registration बाबत मार्गदर्शन हवे असेल, तर थेट आमच्या टीमशी संपर्क साधा.",
       form: {
-        title: "कोर्स चौकशी फॉर्म",
+        title: "Course चौकशी Form",
         fullName: "पूर्ण नाव",
         fullNamePlaceholder: "उदा. राजेश पाटील",
-        phone: "मोबाईल / व्हॉट्सॲप नंबर",
-        phonePlaceholder: "उदा. +९१ ९८७६५ ४३२१०",
-        email: "ईमेल आयडी",
+        phone: "Mobile / WhatsApp नंबर",
+        phonePlaceholder: "उदा. +91 98765 43210",
+        email: "Email ID",
         emailPlaceholder: "उदा. rajesh@gmail.com",
-        courseSelect: "इच्छित कोर्स निवडा",
-        selectDefault: "कोर्स किंवा विषय निवडा...",
-        message: "तुमचा प्रश्न किंवा संदेश",
-        messagePlaceholder: "तुमचा व्यवसाय, सध्याचा अनुभव किंवा काय शिकायचे आहे ते सांगा...",
-        submitButton: "चौकशी पाठवा",
+        courseSelect: "कोणत्या Course बद्दल माहिती हवी आहे?",
+        selectDefault: "Course निवडा...",
+        message: "तुमचा प्रश्न किंवा माहिती",
+        messagePlaceholder: "तुमचा Business, सध्याचा अनुभव किंवा काय शिकायचे आहे ते सांगा...",
+        submitButton: "Enquiry पाठवा",
         submitting: "पाठवत आहे...",
-        successTitle: "चौकशी यशस्वीरीत्या पाठवली गेली!",
-        successMessage: "धन्यवाद! ई-टेंडर गुरु टीम लवकरच तुमच्याशी फोन किंवा व्हॉट्सॲपवर संपर्क करेल.",
-        errorTitle: "कृपया आवश्यक माहिती योग्य प्रकारे भरा",
+        successTitle: "Enquiry यशस्वीरीत्या पाठवली गेली!",
+        successMessage: "धन्यवाद! eTender Guru टीम लवकरच तुमच्याशी Call किंवा WhatsApp वर संपर्क करेल.",
+        errorTitle: "कृपया आवश्यक माहिती भरा",
         sendAnother: "दुसरा प्रश्न विचारा"
       },
       directChannels: {
-        title: "थेट संपर्क केंद्र",
-        desc: "तातडीच्या माहितीसाठी आणि मार्गदर्शन सत्रांसाठी खालील अधिकृत माध्यमांवर संपर्क साधा:",
-        whatsappBtn: "व्हॉट्सॲपवर चॅट करा",
-        whatsappMsg: "नमस्कार ई-टेंडर गुरु, मी आपल्या वेबसाईटवर माहिती पाहिली. मला आपल्या निविदा प्रशिक्षण कोर्सेसबद्दल अधिक माहिती हवी आहे.",
-        callBtn: "थेट फोन हेल्पलाईन",
-        emailBtn: "अधिकृत ईमेल",
+        title: "थेट संपर्क",
+        desc: "तातडीच्या माहितीसाठी व मार्गदर्शनासाठी खालील अधिकृत नंबरवर थेट संपर्क साधा:",
+        whatsappBtn: "WhatsApp वर Chat करा",
+        whatsappMsg: "नमस्कार eTender Guru, मी आपल्या Website वर माहिती पाहिली. मला Tender Training Courses बद्दल माहिती हवी आहे.",
+        callBtn: "थेट Call करा",
+        emailBtn: "Email पाठवा",
         phone: "+91 9975917001",
         phoneFormatted: "+91 99759 17001",
         email: "etenderguru@gmail.com",
@@ -533,17 +533,17 @@ export const translations = {
 
     // Footer
     footer: {
-      tagline: "कंत्राटदार, एमएसएमई आणि नवउद्योजकांना शासकीय ई-निविदांचे परिपूर्ण आणि व्यावहारिक शिक्षण देणारे व्यासपीठ.",
-      navTitle: "महत्त्वाचे दुवे",
-      navCourses: "कोर्सेस व अभ्यासक्रम",
-      navYoutube: "मोफत व्हिडिओ धडे",
-      navFounder: "प्रशिक्षकांबद्दल माहिती",
-      navResources: "निविदा रोडमॅप व चेकलिस्ट",
-      navContact: "चौकशी व संपर्क",
-      legalTitle: "महत्त्वाची सूचना",
-      disclaimer: "ई-टेंडर गुरु हे एक स्वतंत्र शैक्षणिक व प्रशिक्षण व्यासपीठ आहे. आम्ही सार्वजनिक निविदा प्रणालींचे व्यावहारिक प्रशिक्षण देतो. आम्ही कोणतीही शासकीय संस्था किंवा निविदा जारी करणारे कार्यालय नाही.",
-      copyright: `© ${new Date().getFullYear()} ई-टेंडर गुरु. सर्व हक्क सुरक्षित.`,
-      builtWith: "व्यावहारिक शासकीय निविदा शिक्षण"
+      tagline: "कंत्राटदार, MSME व्यावसायिक व नवीन तरुणांना Government E-Tenders चे परिपूर्ण आणि प्रॅक्टिकल शिक्षण देणारे व्यासपीठ.",
+      navTitle: "Quick Links",
+      navCourses: "Courses & Syllabus",
+      navYoutube: "मोफत YouTube Videos",
+      navFounder: "About Trainer",
+      navResources: "Tender Roadmap & Checklist",
+      navContact: "Contact & Enquiry",
+      legalTitle: "महत्त्वाची Disclaimer सूचना",
+      disclaimer: "eTender Guru हे एक स्वतंत्र Training व Educational प्लॅटफॉर्म आहे. आम्ही सरकारी टेंडर प्रक्रियांचे प्रॅक्टिकल प्रशिक्षण देतो. आम्ही कोणतीही शासकीय संस्था किंवा टेंडर जारी करणारे कार्यालय नाही.",
+      copyright: `© ${new Date().getFullYear()} eTender Guru. सर्व हक्क सुरक्षित.`,
+      builtWith: "Practical Government Tender Training"
     }
   }
 };

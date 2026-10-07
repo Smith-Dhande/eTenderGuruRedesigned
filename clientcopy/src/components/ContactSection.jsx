@@ -105,7 +105,7 @@ export const ContactSection = ({ selectedCourseId, onClearSelectedCourse }) => {
                 <h3 className="studio-form-title">{t.form.title}</h3>
                 <p className="studio-form-subtitle">
                   {language === 'mr'
-                    ? 'आपली माहिती भरा, आमची तज्ज्ञ टीम अभ्यासक्रम व नोंदणी मार्गदर्शनासाठी संपर्क करेल.'
+                    ? 'खाली आपली माहिती भरा. आमची टीम तुम्हाला Course ची सविस्तर माहिती देईल.'
                     : 'Submit your query below. Our training team will review and share customized enrollment guidance.'}
                 </p>
               </div>
@@ -254,7 +254,7 @@ export const ContactSection = ({ selectedCourseId, onClearSelectedCourse }) => {
               <div className="dispatch-header">
                 <div className="dispatch-eyebrow">
                   <span className="dispatch-live-dot" aria-hidden="true"></span>
-                  <span>{language === 'mr' ? 'थेट संपर्क केंद्र' : 'DIRECT CONSULTATION HUB'}</span>
+                  <span>{language === 'mr' ? 'थेट संपर्क' : 'DIRECT CONSULTATION HUB'}</span>
                 </div>
                 <h3 className="dispatch-title">{t.directChannels.title}</h3>
                 <p className="dispatch-desc">{t.directChannels.desc}</p>

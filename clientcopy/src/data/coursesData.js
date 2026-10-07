@@ -4,43 +4,43 @@ export const coursesData = [
     num: "01",
     categoryTag: {
       en: "FOUNDATION",
-      mr: "पायाभूत"
+      mr: "FOUNDATION"
     },
     badge: "Foundation",
     category: "basics",
     titleSerif: {
       en: "Tender",
-      mr: "निविदा"
+      mr: "टेंडर"
     },
     titleImpact: {
       en: "FUNDAMENTALS",
-      mr: "पायाभूत अभ्यासक्रम"
+      mr: "FUNDAMENTALS"
     },
     title: {
       en: "Government Tender Fundamentals",
-      mr: "शासकीय निविदा पायाभूत अभ्यासक्रम"
+      mr: "Government Tender Fundamentals"
     },
     shortDesc: {
       en: "Understand the complete tender process from scratch.",
-      mr: "निविदा प्रक्रिया सुरुवातीपासून संपूर्णपणे समजून घ्या."
+      mr: "टेंडरची संपूर्ण प्रक्रिया अगदी सुरुवातीपासून सोप्या पद्धतीने समजून घ्या."
     },
     image: "/courses/course_1.jpg",
 
     duration: {
       en: "4 Weeks (Hands-on)",
-      mr: "४ आठवडे (प्रात्यक्षिकासह)"
+      mr: "४ आठवडे (Live प्रॅक्टिकल्स)"
     },
     level: {
       en: "Beginner to Intermediate",
-      mr: "नवशिक्या ते मध्यम स्तर"
+      mr: "Beginner ते Intermediate"
     },
     targetAudience: {
       en: "First-time bidders, MSME owners, suppliers, and aspiring civil/electrical contractors.",
-      mr: "प्रथमच निविदा भरणारे, एमएसएमई व्यावसायिक, सप्लायर्स व नवीन कंत्राटदार."
+      mr: "नवीन कंत्राटदार, MSME व्यावसायिक, Suppliers आणि टेंडर व्यवसाय सुरू करू इच्छिणारे."
     },
     prerequisites: {
       en: "Basic computer familiarity and active GST/PAN registration.",
-      mr: "मूलभूत संगणक ज्ञान आणि पॅन/जीएसटी नोंदणी."
+      mr: "Basic Computer वापरता येणे आणि PAN / GST असणे."
     },
     modules: {
       en: [
@@ -68,23 +68,23 @@ export const coursesData = [
       mr: [
         {
           number: "०१",
-          title: "भारतातील शासकीय खरेदी प्रणालीची ओळख",
-          points: ["जनरल फायनान्शिअल रूल्स (GFR)", "एक पाकीट, दोन पाकीट व बहुपाकीट निविदा पद्धत", "निविदा वेळापत्रक आणि शुद्धिपत्रक (Corrigendum)"]
+          title: "सरकारी खरेदी व टेंडर पद्धतीची ओळख",
+          points: ["General Financial Rules (GFR)", "Single Packet व Two Packet टेंडर पद्धत", "टेंडर वेळापत्रक आणि Corrigendum"]
         },
         {
           number: "०२",
-          title: "NIT (Notice Inviting Tender) दस्तऐवज वाचन",
-          points: ["पात्रता अटींचे सखोल विश्लेषण", "आवश्यक टर्नओव्हर आणि बँक सॉल्व्हन्सी निकष", "समान कामाच्या अनुभवाचे नियम"]
+          title: "NIT (Notice Inviting Tender) वाचन व अभ्यास",
+          points: ["पात्रता अटींचे सखोल विश्लेषण", "आवश्यक Turnover आणि Bank Solvency", "कामाचा अनुभव व निकष"]
         },
         {
           number: "०३",
-          title: "इसारा रक्कम (EMD) आणि निविदा शुल्क",
-          points: ["MSME/उद्यम नोंदणीधारकांसाठी EMD सवलती", "बँक गॅरंटीचे (BG) नियम व मुदत", "रक्कम जप्त होण्यापासून बचावाचे मार्ग"]
+          title: "EMD (इसारा रक्कम) आणि Tender Fee",
+          points: ["MSME / Udyam साठी EMD सवलती", "Bank Guarantee (BG) चे नियम", "EMD जप्त होण्यापासून बचावाचे मार्ग"]
         },
         {
           number: "०४",
-          title: "प्री-बिड मिटिंग व शंका निरसन",
-          points: ["अधिकारी वर्गाला प्री-बिड प्रश्न कसे विचारावेत", "अवाजवी अटींना कायदेशीर आव्हान", "मुदतवाढ आणि बदल समजून घेणे"]
+          title: "Pre-Bid Meeting व शंका निरसन",
+          points: ["अधिकाऱ्यांना Pre-Bid प्रश्न कसे विचारावेत", "अवाजवी अटींना कायदेशीर आव्हान", "मुदतवाढ व बदल समजून घेणे"]
         }
       ]
     },
@@ -95,9 +95,9 @@ export const coursesData = [
         "Confidence to decide whether a tender is profitable before spending on documentation"
       ],
       mr: [
-        "कोणतीही शासकीय निविदा १५ मिनिटांत समजून घेण्याची क्षमता",
-        "कायदेशीर अटी, दंडाच्या तरतुदी आणि पेमेंट अटींचे स्पष्ट ज्ञान",
-        "वेळ व पैसा खर्च करण्यापूर्वी निविदा फायद्याची आहे की नाही हे ठरवण्याचा आत्मविश्वास"
+        "कोणतेही टेंडर १५ मिनिटांत समजून घेण्याची क्षमता",
+        "कायदेशीर अटी, Penalty आणि Payment नियमांची स्पष्ट माहिती",
+        "वेळ व पैसे खर्च करण्याआधी टेंडर फायद्याचे आहे की नाही हे ठरवण्याचा आत्मविश्वास"
       ]
     }
   },
@@ -106,30 +106,30 @@ export const coursesData = [
     num: "02",
     categoryTag: {
       en: "DOCUMENTATION",
-      mr: "कागदपत्रे"
+      mr: "DOCUMENTS"
     },
     badge: "Documentation",
     category: "documentation",
     titleSerif: {
       en: "Tender",
-      mr: "निविदा"
+      mr: "टेंडर"
     },
     titleImpact: {
       en: "DOCUMENTS",
-      mr: "कागदपत्रे व फाइल्स"
+      mr: "DOCUMENTS"
     },
     title: {
       en: "Tender Documents & Technical Filing",
-      mr: "निविदा कागदपत्रे व तांत्रिक फाइल्स"
+      mr: "Tender Documents & Technical Filing"
     },
     shortDesc: {
       en: "Learn how to read, prepare and submit all key tender documents.",
-      mr: "सर्व महत्त्वाची निविदा कागदपत्रे तयार करणे व अचूक सबमिट करणे शिका."
+      mr: "टेंडरसाठी लागणारे सर्व महत्त्वाचे Documents तयार करणे व अचूक भरणे शिका."
     },
     image: "/courses/course_2.jpg",
     modulesCount: {
       en: "14 Modules",
-      mr: "१४ मॉड्यूल्स"
+      mr: "१४ Modules"
     },
     durationShort: {
       en: "8+ Hours",
@@ -137,23 +137,23 @@ export const coursesData = [
     },
     levelTag: {
       en: "Beginner",
-      mr: "नवशिक्या"
+      mr: "Beginner"
     },
     duration: {
       en: "5 Weeks (Practical)",
-      mr: "५ आठवडे (प्रात्यक्षिकासह)"
+      mr: "५ आठवडे (Practical)"
     },
     level: {
       en: "Practical Filing",
-      mr: "थेट प्रात्यक्षिक स्तर"
+      mr: "Practical Filing"
     },
     targetAudience: {
       en: "Contractors facing document rejections, estimators, and tender filing staff.",
-      mr: "कागदपत्रांमुळे रिजेक्ट होणारे कंत्राटदार, टेंडर कर्मचारी व इस्टिमेटर्स."
+      mr: "Documents मुळे टेंडर रिजेक्ट होणारे कंत्राटदार, टेंडर भरणारे कर्मचारी व Estimators."
     },
     prerequisites: {
       en: "Basic tender familiarity and business documentation.",
-      mr: "निविदा प्राथमिक ज्ञान व व्यावसायिक कागदपत्रे."
+      mr: "टेंडरची प्राथमिक माहिती आणि व्यवसायाचे Documents."
     },
     modules: {
       en: [
@@ -176,18 +176,18 @@ export const coursesData = [
       mr: [
         {
           number: "०१",
-          title: "तांत्रिक दस्तऐवजांची अचूक रचना",
-          points: ["अनुक्रमणिका आणि पेज नंबरिंग", "शपथपत्रांचे मुद्रांक शुल्क नियम", "जॉईंट व्हेंचर (JV) कायदेशीर फॉरमॅट"]
+          title: "Technical Documents ची अचूक रचना",
+          points: ["Index Sheet आणि Page Numbering", "Stamp Paper व Affidavit चे नियम", "Joint Venture (JV) चे नियम व Formats"]
         },
         {
           number: "०२",
-          title: "आर्थिक बोली व BOQ तयार करणे",
-          points: ["टक्केवारी व आयटम दर अचूक भरणे", "एक्सेल मॅक्रो एरर निवारण", "पाकीट अ, ब व क अचूक अपलोड"]
+          title: "Financial Bid व BOQ तयार करणे",
+          points: ["Percentage व Item Rate BOQ Calculation", "Excel मधील चुका टाळणे", "Packet A, B व C अचूक Upload करणे"]
         },
         {
           number: "०३",
-          title: "रिजेक्शन विश्लेषण",
-          points: ["प्रत्यक्ष बाद झालेल्या निविदांचा अभ्यास", "अवाजवी त्रुटींविरोधात अपील करणे"]
+          title: "Rejection विश्लेषण व उपाय",
+          points: ["प्रत्यक्ष Disqualify झालेल्या टेंडरचा अभ्यास", "चुकीच्या रिजेक्शनविरोधात Appeal करणे"]
         }
       ]
     },
@@ -198,9 +198,9 @@ export const coursesData = [
         "Ready-to-use professional document templates"
       ],
       mr: [
-        "तांत्रिक मूल्यमापनात १००% पात्रतेची खात्री",
-        "स्टॅम्प पेपर व शपथपत्रांमधील चुका टाळणे",
-        "तयार व्यावसायिक डॉक्युमेंट फॉरमॅट्स"
+        "Technical Bid मध्ये १००% पात्रतेची खात्री",
+        "Stamp Paper व Affidavits मधील चुका टाळणे",
+        "तयार Professional Document Formats"
       ]
     }
   },
@@ -209,30 +209,30 @@ export const coursesData = [
     num: "03",
     categoryTag: {
       en: "ANALYSIS",
-      mr: "पोर्टल व विश्लेषण"
+      mr: "PORTALS"
     },
     badge: "Most Popular",
     category: "portal",
     titleSerif: {
       en: "Tender",
-      mr: "निविदा"
+      mr: "टेंडर"
     },
     titleImpact: {
       en: "SEARCH & ANALYSIS",
-      mr: "शोध व पोर्टल मास्टरक्लास"
+      mr: "SEARCH & PORTALS"
     },
     title: {
       en: "Tender Search & Portal Masterclass",
-      mr: "निविदा शोध व पोर्टल मास्टरक्लास"
+      mr: "Tender Search & Portal Masterclass"
     },
     shortDesc: {
       en: "Find the right tenders and analyze opportunities effectively.",
-      mr: "योग्य निविदा शोधणे आणि व्यावसायिक संधींचे अचूक विश्लेषण करणे शिका."
+      mr: "योग्य टेंडर शोधणे आणि Portals वर स्वतः टेंडर भरणे शिका."
     },
     image: "/courses/course_3.jpg",
     modulesCount: {
       en: "10 Modules",
-      mr: "१० मॉड्यूल्स"
+      mr: "१० Modules"
     },
     durationShort: {
       en: "5+ Hours",
@@ -240,23 +240,23 @@ export const coursesData = [
     },
     levelTag: {
       en: "Beginner",
-      mr: "नवशिक्या"
+      mr: "Beginner"
     },
     duration: {
       en: "6 Weeks (Live Demos)",
-      mr: "६ आठवडे (थेट प्रात्यक्षिके)"
+      mr: "६ आठवडे (Live Demos)"
     },
     level: {
       en: "Hands-on Masterclass",
-      mr: "थेट प्रात्यक्षिक मास्टरक्लास"
+      mr: "Hands-on Masterclass"
     },
     targetAudience: {
       en: "Active contractors, product suppliers, service providers, and bidding executives.",
-      mr: "सक्रिय कंत्राटदार, माल पुरवठादार, सर्व्हिस प्रोव्हायडर्स व टेंडर एक्झिक्युटिव्ह."
+      mr: "सक्रिय कंत्राटदार, Suppliers, Service Providers आणि टेंडर भरणारे सर्व व्यावसायिक."
     },
     prerequisites: {
       en: "Computer / Laptop, Class 3 DSC token, active internet connection.",
-      mr: "लॅपटॉप/संगणक, क्लास ३ डिजिटल सिग्नेचर (DSC), इंटरनेट कनेक्शन."
+      mr: "Computer / Laptop, Class 3 DSC Token आणि Internet."
     },
     modules: {
       en: [
@@ -279,18 +279,18 @@ export const coursesData = [
       mr: [
         {
           number: "०१",
-          title: "DSC सेटिंग व पोर्टल लॉगिन",
-          points: ["जावा (Java) सेटिंग व सिक्युरिटी एक्सेप्शन", "DSC ड्रायव्हर इन्स्टॉलेशन व टोकन मॅपिंग"]
+          title: "DSC Setting व Portal Login",
+          points: ["Java Setting व Browser Security", "DSC Driver Installation व Token Mapping"]
         },
         {
           number: "०२",
-          title: "महाटेंडर शोध व थेट बोली",
-          points: ["निविदा शोधणे व माय टेंडर्समध्ये जोडणे", "पाकीट अ, ब व क अपलोड आणि पावती मिळवणे"]
+          title: "Mahatender Search व Live Bidding",
+          points: ["टेंडर शोधणे व My Tenders मध्ये जोडणे", "Packet A, B व C Upload करून Final Receipt मिळवणे"]
         },
         {
           number: "०३",
-          title: "GeM पोर्टल संपूर्ण प्रक्रिया",
-          points: ["सेलर नोंदणी व कॅटलॉग लिस्टिंग", "L1 बोली आणि कस्टम बिड्स"]
+          title: "GeM Portal संपूर्ण प्रक्रिया",
+          points: ["Seller Registration व Product Listing", "Direct Purchase, L1 Bidding व Custom Bids"]
         }
       ]
     },
@@ -301,9 +301,9 @@ export const coursesData = [
         "Find high-probability tenders before competitors"
       ],
       mr: [
-        "महाटेंडर आणि GeM पोर्टलवर संपूर्ण प्रभुत्व",
-        "DSC स्वाक्षरीच्या सर्व अडचणींचे कायमचे निवारण",
-        "स्पर्धकांच्या आधी चांगल्या निविदा शोधण्याची क्षमता"
+        "Mahatender आणि GeM Portal वर संपूर्ण प्रभुत्व",
+        "DSC Signing च्या सर्व अडचणींचे कायमचे निवारण",
+        "इतरांच्या आधी फायदेशीर टेंडर शोधण्याची क्षमता"
       ]
     }
   },
@@ -312,30 +312,30 @@ export const coursesData = [
     num: "04",
     categoryTag: {
       en: "ADVANCED",
-      mr: "प्रगत रणनीती"
+      mr: "STRATEGY"
     },
     badge: "Strategy Special",
     category: "strategy",
     titleSerif: {
       en: "Bidding",
-      mr: "बोली"
+      mr: "बिडिंग"
     },
     titleImpact: {
       en: "STRATEGY",
-      mr: "अचूक रणनीती व दर"
+      mr: "STRATEGY"
     },
     title: {
       en: "Bidding Strategy & Win Rate Optimization",
-      mr: "बोली रणनीती व दर निश्चिती"
+      mr: "Bidding Strategy & Rate Analysis"
     },
     shortDesc: {
       en: "Learn how to create a winning strategy and price your bid right.",
-      mr: "जिंकणारी अचूक रणनीती तयार करणे आणि योग्य स्पर्धात्मक दर ठरवणे शिका."
+      mr: "टेंडर जिंकण्यासाठी अचूक Bidding Strategy आणि योग्य Rates ठरवणे शिका."
     },
     image: "/courses/course_4.jpg",
     modulesCount: {
       en: "11 Modules",
-      mr: "११ मॉड्यूल्स"
+      mr: "११ Modules"
     },
     durationShort: {
       en: "6+ Hours",
@@ -343,23 +343,23 @@ export const coursesData = [
     },
     levelTag: {
       en: "Intermediate",
-      mr: "मध्यम स्तर"
+      mr: "Intermediate"
     },
     duration: {
       en: "4 Weeks (Intensive)",
-      mr: "४ आठवडे (सखोल मार्गदर्शन)"
+      mr: "४ आठवडे (Intensive)"
     },
     level: {
       en: "Advanced Strategy",
-      mr: "प्रगत रणनीती"
+      mr: "Advanced Strategy"
     },
     targetAudience: {
       en: "Contractors aiming to maximize profit margins and win high-value government contracts.",
-      mr: "नफा वाढवून मोठ्या किमतीची शासकीय कामे मिळवू इच्छिणारे व्यावसायिक व कंत्राटदार."
+      mr: "चांगला नफा ठेवून मोठी सरकारी कामे मिळवू इच्छिणारे कंत्राटदार व व्यावसायिक."
     },
     prerequisites: {
       en: "Experience with tender bidding and cost estimation.",
-      mr: "निविदा प्रक्रियेचा अनुभव व अंदाजपत्रक माहिती."
+      mr: "टेंडर भरण्याचा अनुभव आणि प्राथमिक अंदाजपत्रक माहिती."
     },
     modules: {
       en: [
@@ -382,18 +382,18 @@ export const coursesData = [
       mr: [
         {
           number: "०१",
-          title: "स्पर्धक विश्लेषण व मार्केट इंटेलिजन्स",
-          points: ["मागील जिंकलेल्या निविदांचा अभ्यास", "तुलनात्मक तक्ते (Comparative Sheets) विश्लेषण"]
+          title: "Competitor Analysis व Market माहिती",
+          points: ["मागील जिंकलेल्या टेंडरचा अभ्यास", "Comparative Sheets चे विश्लेषण करणे"]
         },
         {
           number: "०२",
-          title: "दर निश्चिती व नफा नियोजन",
-          points: ["कामाचा मूळ खर्च व नफ्याचे गणित", "अबॉव्ह / बिलो दरांची जोखीम व रणनीती", "APSD अतिरिक्त सुरक्षा अनामत हिशोब"]
+          title: "Rate Analysis व नफ्याचे नियोजन",
+          points: ["कामाचा मूळ खर्च व Margin चे गणित", "Above / Below Bidding ची रणनीती", "APSD (अतिरिक्त सुरक्षा अनामत) चे नियम"]
         },
         {
           number: "०३",
-          title: "वर्क ऑर्डरनंतरची सुरक्षितता",
-          points: ["करारनामा व वर्क ऑर्डर पडताळणी", "मुदतवाढ नियम व बिलिंग सुरक्षा"]
+          title: "Work Order नंतरचे व्यवस्थापन",
+          points: ["Agreement व Work Order पडताळणी", "मुदतवाढ नियम व Payment सुरक्षा"]
         }
       ]
     },
@@ -404,9 +404,9 @@ export const coursesData = [
         "Confidence to handle high-value tenders and multi-crore bids"
       ],
       mr: [
-        "तोटा न होता काम मिळवून देणारे अचूक दर ठरवण्याचे कौशल्य",
-        "स्पर्धेत सातत्याने जिंकण्यासाठीची व्यावसायिक रणनीती",
-        "मोठ्या किमतीच्या कामांसाठी आत्मविश्वासाने बोली लावण्याची क्षमता"
+        "तोटा न होता काम जिंकून देणारे अचूक Rates ठरवण्याचे कौशल्य",
+        "स्पर्धेत सातत्याने टेंडर जिंकण्याची व्यावसायिक रणनीती",
+        "मोठ्या किमतीच्या कामांसाठी आत्मविश्वासाने Bidding करण्याची क्षमता"
       ]
     }
   }
