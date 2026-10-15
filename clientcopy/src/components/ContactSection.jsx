@@ -330,7 +330,6 @@ export const ContactSection = ({ selectedCourseId, onClearSelectedCourse }) => {
               {/* Trust Footnote & Coverage Info */}
               <div className="dispatch-trust-box">
                 <div className="trust-coverage-row">
-                  <div className="trust-dot-pulse" aria-hidden="true"></div>
                   <div className="trust-text-group">
                     <span className="trust-label">{t.directChannels.locationLabel}</span>
                     <span className="trust-val">{t.directChannels.locationValue}</span>
